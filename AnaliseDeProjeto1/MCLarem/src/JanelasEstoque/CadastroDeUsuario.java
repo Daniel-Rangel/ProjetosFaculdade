@@ -9,12 +9,12 @@ package JanelasEstoque;
  *
  * @author danie
  */
-public class CadastroFuncionario extends javax.swing.JFrame {
+public class CadastroDeUsuario extends javax.swing.JFrame {
 
     /**
      * Creates new form CadastroFuncionario
      */
-    public CadastroFuncionario() {
+    public CadastroDeUsuario() {
         initComponents();
     }
 
@@ -31,9 +31,9 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jTextField4 = new javax.swing.JTextField();
         jFormattedTextField5 = new javax.swing.JFormattedTextField();
         jLabel1 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        ID_Usuario = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        txtNomeUs = new javax.swing.JTextField();
         jComboBox1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -46,7 +46,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        txtRgUs = new javax.swing.JFormattedTextField();
         jLabel9 = new javax.swing.JLabel();
         jFormattedTextField2 = new javax.swing.JFormattedTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -75,12 +75,12 @@ public class CadastroFuncionario extends javax.swing.JFrame {
 
         jLabel1.setText("Nº Cracha");
 
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        jTextField1.setText("00223355");
+        ID_Usuario.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        ID_Usuario.setText("00223355");
 
         jLabel2.setText("Nome Funcionario");
 
-        jTextField2.setText("Flavio Mesquita Cabrunco");
+        txtNomeUs.setText("Flavio Mesquita Cabrunco");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estoque", "Atendimento", "Caixa", "Gerencia", "Supervisão", " " }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -93,6 +93,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
 
         jLabel4.setText("Cod Departamento");
 
+        jTextField3.setEditable(false);
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextField3.setText("033");
 
@@ -134,8 +135,8 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
@@ -144,11 +145,11 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         jLabel8.setText("RG");
 
         try {
-            jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###-#")));
+            txtRgUs.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###-#")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jFormattedTextField1.setText("30.105.578-7");
+        txtRgUs.setText("30.105.578-7");
 
         jLabel9.setText("CPF");
 
@@ -222,11 +223,11 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(ID_Usuario, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jFormattedTextField1, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(txtRgUs, javax.swing.GroupLayout.Alignment.LEADING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -247,7 +248,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jTextField2)
+                                    .addComponent(txtNomeUs)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(27, 27, 27)
                                         .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -282,8 +283,8 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                             .addComponent(jLabel2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(ID_Usuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtNomeUs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
@@ -291,7 +292,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                             .addComponent(jLabel10))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtRgUs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jFormattedTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -356,25 +357,27 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroDeUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroDeUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroDeUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroDeUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroFuncionario().setVisible(true);
+                new CadastroDeUsuario().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField ID_Usuario;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -384,7 +387,6 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     private javax.swing.JButton jButton7;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JFormattedTextField jFormattedTextField3;
     private javax.swing.JFormattedTextField jFormattedTextField4;
@@ -405,12 +407,12 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextField txtNomeUs;
+    private javax.swing.JFormattedTextField txtRgUs;
     // End of variables declaration//GEN-END:variables
 }
