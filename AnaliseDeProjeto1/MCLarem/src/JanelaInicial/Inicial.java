@@ -34,16 +34,19 @@ public class Inicial extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPopupMenu1 = new javax.swing.JPopupMenu();
         jMenuBar1 = new javax.swing.JMenuBar();
         ArquivoBMenu = new javax.swing.JMenu();
         LogarUsuario_Aq_BMenu = new javax.swing.JMenuItem();
         Sair_Aq_BMenu = new javax.swing.JMenuItem();
+        Relatorio = new javax.swing.JMenuItem();
         at_Consultar_Pedido = new javax.swing.JMenu();
         AddCadatro_AT_Bmenu = new javax.swing.JMenuItem();
         NovoPedido_AT_BMenu = new javax.swing.JMenuItem();
         LocalizarCad_AT_BMenu = new javax.swing.JMenuItem();
         AbrirCaixa_AtMenu = new javax.swing.JMenuItem();
         FornecedorBMenu = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         AjudaBmenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -65,6 +68,9 @@ public class Inicial extends javax.swing.JFrame {
             }
         });
         ArquivoBMenu.add(Sair_Aq_BMenu);
+
+        Relatorio.setText("Relatorios");
+        ArquivoBMenu.add(Relatorio);
 
         jMenuBar1.add(ArquivoBMenu);
 
@@ -99,7 +105,11 @@ public class Inicial extends javax.swing.JFrame {
 
         jMenuBar1.add(at_Consultar_Pedido);
 
-        FornecedorBMenu.setText("Fornecedores");
+        FornecedorBMenu.setText("Estoque");
+
+        jMenuItem1.setText("Cadastrar item");
+        FornecedorBMenu.add(jMenuItem1);
+
         jMenuBar1.add(FornecedorBMenu);
 
         AjudaBmenu.setText("Ajuda");
@@ -196,8 +206,11 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JMenuItem LocalizarCad_AT_BMenu;
     private javax.swing.JMenuItem LogarUsuario_Aq_BMenu;
     private javax.swing.JMenuItem NovoPedido_AT_BMenu;
+    private javax.swing.JMenuItem Relatorio;
     private javax.swing.JMenuItem Sair_Aq_BMenu;
     private javax.swing.JMenu at_Consultar_Pedido;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPopupMenu jPopupMenu1;
     // End of variables declaration//GEN-END:variables
 }
