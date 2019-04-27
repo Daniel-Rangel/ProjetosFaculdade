@@ -359,10 +359,10 @@ public class CadastroCliente extends javax.swing.JDialog {
                         .addComponent(txtCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel17))
                     .addComponent(jButton4))
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(95, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(585, 438));
+        setSize(new java.awt.Dimension(585, 488));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

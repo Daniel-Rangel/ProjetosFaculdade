@@ -172,7 +172,7 @@ public class CadastroDeUsuario extends javax.swing.JFrame {
 
         jButton5.setText("Alterar");
 
-        jButton6.setText("Salvar");
+        jButton6.setText("Incluir");
 
         jButton7.setText("Sair");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
