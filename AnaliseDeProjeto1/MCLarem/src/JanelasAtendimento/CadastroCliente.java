@@ -42,7 +42,7 @@ public class CadastroCliente extends javax.swing.JDialog {
         Rua_Txt = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        Sexo_Txt = new javax.swing.JComboBox<>();
+        Sexo_Txt = new javax.swing.JComboBox<String>();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -100,7 +100,7 @@ public class CadastroCliente extends javax.swing.JDialog {
 
         jLabel7.setText("Sexo");
 
-        Sexo_Txt.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Selecione", "Masculino", "Feminino" }));
+        Sexo_Txt.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione", "Masculino", "Feminino" }));
         Sexo_Txt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Sexo_TxtActionPerformed(evt);
