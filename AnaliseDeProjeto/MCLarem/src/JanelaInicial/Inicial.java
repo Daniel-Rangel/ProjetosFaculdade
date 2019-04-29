@@ -4,7 +4,7 @@ package JanelaInicial;
 import JanelasAtendimento.CadastroCliente;
 import JanelasAtendimento.ConsultarPedidos;
 import JanelasAtendimento.Login;
-import JanelasAtendimento.SelecionarItem;
+import JanelasAtendimento.SelecionarItensVenda;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -152,7 +152,7 @@ public class Inicial extends javax.swing.JFrame {
 
     private void NovoPedido_AT_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NovoPedido_AT_BMenuActionPerformed
         // Tela de pedidos
-        SelecionarItem item = new SelecionarItem();
+        SelecionarItensVenda item = new SelecionarItensVenda();
         item.setVisible(true);
     }//GEN-LAST:event_NovoPedido_AT_BMenuActionPerformed
 
