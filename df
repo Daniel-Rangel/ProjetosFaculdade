@@ -1,0 +1,78 @@
+[33mcommit fff5593b7378d2adf49344ac7343079729210854[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Mon Apr 29 16:12:02 2019 -0300
+
+    adicionado mais mundaças, layout, nomes, e organizado conforme diagrama de classes
+
+[33mcommit 09b6b1700951bf531e1e8fc7d5f06ee94b0a8c1d[m[33m ([m[1;31mfaculdade/master[m[33m)[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 23:36:32 2019 -0300
+
+    verificação do projeto e itens não salvos
+
+[33mcommit 84351aa928b363fb7869ecda981ba3a13308d351[m
+Merge: 56b5e4a 59d7c82
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 23:31:51 2019 -0300
+
+    add mescla do kawam
+
+[33mcommit 56b5e4a6fc75e66bf934f03d0cb220173a5481b1[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 22:12:12 2019 -0300
+
+    testando push
+
+[33mcommit 04742423650210595b6bd67746591a76dfff6b11[m
+Author: Daniel Rangel <42664615+Daniel-Rangel@users.noreply.github.com>
+Date:   Sat Apr 27 22:07:30 2019 -0300
+
+    Create teste.txt
+
+[33mcommit 59d7c826d72384870b6805b6ab13d427cf66a758[m
+Author: Kauan <kalezdiaz@gmail.com>
+Date:   Sat Apr 27 13:11:52 2019 -0300
+
+    Foi feita a Tela do fonecedor
+
+[33mcommit 1a2b45aa987d17efdc4dc4dda05badd023b27067[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 12:43:18 2019 -0300
+
+    adicionado pasta porjeto interdiciplinar
+
+[33mcommit c8ca968b6f1bf9ad1ef98b7bd767d6dfa09c21e7[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 21:28:24 2019 -0300
+
+    os nao salvos
+
+[33mcommit f0b5ed2ef051abec02d9605a72a46b95d210cffb[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 21:11:48 2019 -0300
+
+    alterado tela de cadastro de protudo
+
+[33mcommit 98a84a72a4f36c219cdd50a8a2827d4d0a279c7b[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 01:51:30 2019 -0300
+
+    feito parte da tela de cadastro de produto obs tem que pesquisar mais telas
+
+[33mcommit 8dbb7be053042da0c4c3f520354c9cb307d0ce08[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 01:00:21 2019 -0300
+
+    adicionado mudanças no não salvas
+
+[33mcommit 92db94353b74492e2a421b5f72a93ab068325387[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu Apr 25 17:04:04 2019 -0300
+
+    adicionado alguns campos de texto em cadastro cliente, cadastro de itens
+
+[33mcommit 0037b17b7a3d65075fb5bd866371545d35935ab5[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu Apr 25 13:39:12 2019 -0300
+
+    Primeiro commit criando repositorio para pasta projeto da faculdade
