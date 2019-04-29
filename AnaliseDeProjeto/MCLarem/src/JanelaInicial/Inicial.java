@@ -2,9 +2,11 @@ package JanelaInicial;
 
 
 import JanelasAtendimento.CadastroCliente;
+import JanelasAtendimento.Caixa;
 import JanelasAtendimento.ConsultarPedidos;
 import JanelasAtendimento.Login;
 import JanelasAtendimento.SelecionarItensVenda;
+import JanelasEstoque.CadastroProduto;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -101,6 +103,11 @@ public class Inicial extends javax.swing.JFrame {
         at_Consultar_Pedido.add(LocalizarCad_AT_BMenu);
 
         AbrirCaixa_AtMenu.setText("Abrir Caixa");
+        AbrirCaixa_AtMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AbrirCaixa_AtMenuActionPerformed(evt);
+            }
+        });
         at_Consultar_Pedido.add(AbrirCaixa_AtMenu);
 
         jMenuBar1.add(at_Consultar_Pedido);
@@ -108,6 +115,11 @@ public class Inicial extends javax.swing.JFrame {
         FornecedorBMenu.setText("Estoque");
 
         jMenuItem1.setText("Cadastrar item");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         FornecedorBMenu.add(jMenuItem1);
 
         jMenuBar1.add(FornecedorBMenu);
@@ -161,6 +173,18 @@ public class Inicial extends javax.swing.JFrame {
         ConsultarPedidos cad = new ConsultarPedidos();
         cad.setVisible(true);
     }//GEN-LAST:event_LocalizarCad_AT_BMenuActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        //Cadastro de protudos
+        CadastroProduto cadp = new CadastroProduto();
+        cadp.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void AbrirCaixa_AtMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirCaixa_AtMenuActionPerformed
+        // Caixa
+        Caixa cx = new Caixa();
+        cx.setVisible(true);
+    }//GEN-LAST:event_AbrirCaixa_AtMenuActionPerformed
 
     /**
      * @param args the command line arguments

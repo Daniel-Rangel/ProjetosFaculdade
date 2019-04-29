@@ -146,7 +146,7 @@ public class Caixa extends javax.swing.JFrame {
         jTextField1.setEditable(false);
         jTextField1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
-        jTextField1.setText("24");
+        jTextField1.setText("0");
 
         jLabel6.setText("aqui se coloca algumas informações como, tempora para troca, e prazo de garantia.");
         jLabel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
