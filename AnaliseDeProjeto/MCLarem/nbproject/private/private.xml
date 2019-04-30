@@ -3,22 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< HEAD
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasAtendimento/SelecionarItem.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasAtendimento/CadastroCliente.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasAtendimento/ConsultarPedidos.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelaInicial/Inicial.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasAtendimento/Login.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasAtendimento/Caixa.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasEstoque/CadastroProduto.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasEstoque/CadastroDeUsuario.java</file>
-            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasAtendimento/MostrarItem.java</file>
-=======
-            <file>file:/C:/Users/kalez/Desktop/Curso%20git/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasEstoque/CadastroDeUsuario.java</file>
-            <file>file:/C:/Users/kalez/Desktop/Curso%20git/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasEstoque/CadastroProduto.java</file>
-            <file>file:/C:/Users/kalez/Desktop/Curso%20git/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasEstoque/CadastroFonecedor.java</file>
-            <file>file:/C:/Users/kalez/Desktop/Curso%20git/ProjetosFaculdade/AnaliseDeProjeto1/MCLarem/src/JanelasAtendimento/CadastroCliente.java</file>
->>>>>>> 59d7c826d72384870b6805b6ab13d427cf66a758
+            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto/MCLarem/src/JanelasAtendimento/Caixa.java</file>
+            <file>file:/C:/Users/danie/ReositorioGit/ProjetosFaculdade/AnaliseDeProjeto/MCLarem/src/JanelasAtendimento/CadastroCliente.java</file>
         </group>
     </open-files>
 </project-private>
