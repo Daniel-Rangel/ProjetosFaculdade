@@ -39,6 +39,7 @@ public class Inicial extends javax.swing.JFrame {
     private void initComponents() {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
+        jPanel1 = new javax.swing.JPanel();
         jToolBar1 = new javax.swing.JToolBar();
         bntMenu2CadCliente = new javax.swing.JButton();
         btnMenu2CadFornecedor = new javax.swing.JButton();
@@ -50,7 +51,8 @@ public class Inicial extends javax.swing.JFrame {
         btnMenu2Caixa = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
-        jButton8 = new javax.swing.JButton();
+        btnMenu2Sair = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         ArquivoBMenu = new javax.swing.JMenu();
         LogarUsuario_Aq_BMenu = new javax.swing.JMenuItem();
@@ -138,6 +140,11 @@ public class Inicial extends javax.swing.JFrame {
         btnMenu2Caixa.setFocusable(false);
         btnMenu2Caixa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMenu2Caixa.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnMenu2Caixa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenu2CaixaActionPerformed(evt);
+            }
+        });
         jToolBar1.add(btnMenu2Caixa);
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -147,22 +154,46 @@ public class Inicial extends javax.swing.JFrame {
         jButton7.setFocusable(false);
         jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
         jToolBar1.add(jButton7);
         jToolBar1.add(jSeparator3);
 
-        jButton8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(204, 0, 0));
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Sair.png"))); // NOI18N
-        jButton8.setText("Sair");
-        jButton8.setFocusable(false);
-        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        btnMenu2Sair.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMenu2Sair.setForeground(new java.awt.Color(204, 0, 0));
+        btnMenu2Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Sair.png"))); // NOI18N
+        btnMenu2Sair.setText("Sair");
+        btnMenu2Sair.setFocusable(false);
+        btnMenu2Sair.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMenu2Sair.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnMenu2Sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                btnMenu2SairActionPerformed(evt);
             }
         });
-        jToolBar1.add(jButton8);
+        jToolBar1.add(btnMenu2Sair);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/ig[.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2881, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
 
         ArquivoBMenu.setText("Arquivos");
 
@@ -244,13 +275,13 @@ public class Inicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToolBar1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 757, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2871, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 431, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -305,9 +336,10 @@ public class Inicial extends javax.swing.JFrame {
         Cad.setVisible(true);
     }//GEN-LAST:event_bntMenu2CadClienteActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    private void btnMenu2SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2SairActionPerformed
+        // sair do sistema menu2
+        System.exit(0);
+    }//GEN-LAST:event_btnMenu2SairActionPerformed
 
     private void btnMenu2CadFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CadFornecedorActionPerformed
         // Cadastra fornecedor
@@ -320,6 +352,18 @@ public class Inicial extends javax.swing.JFrame {
         CadastroDeUsuario UsuCad = new CadastroDeUsuario();
         UsuCad.setVisible(true);
     }//GEN-LAST:event_btnMenu2CadFuncionarioActionPerformed
+
+    private void btnMenu2CaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CaixaActionPerformed
+        // entrar no caixa
+        Caixa btnCx = new Caixa();
+        btnCx.setVisible(true);
+    }//GEN-LAST:event_btnMenu2CaixaActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // entrar na tela de pedido
+        SelecionarItensVenda btnM2Venda = new SelecionarItensVenda();
+        btnM2Venda.setVisible(true);
+    }//GEN-LAST:event_jButton7ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -374,10 +418,12 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JButton btnMenu2Caixa;
     private javax.swing.JButton btnMenu2Consultar;
     private javax.swing.JButton btnMenu2Produto;
+    private javax.swing.JButton btnMenu2Sair;
     private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;

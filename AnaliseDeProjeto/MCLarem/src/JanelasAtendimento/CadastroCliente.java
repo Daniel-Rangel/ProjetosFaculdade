@@ -38,7 +38,7 @@ public class CadastroCliente extends javax.swing.JDialog {
         jButton2 = new javax.swing.JButton();
         btnPesquisar = new javax.swing.JButton();
         btnExcluir = new javax.swing.JToggleButton();
-        jButton4 = new javax.swing.JButton();
+        btnCliSair = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel13 = new javax.swing.JLabel();
         Id_Cliente = new javax.swing.JTextField();
@@ -104,7 +104,12 @@ public class CadastroCliente extends javax.swing.JDialog {
             }
         });
 
-        jButton4.setText("Sair");
+        btnCliSair.setText("Sair");
+        btnCliSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCliSairActionPerformed(evt);
+            }
+        });
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Dados do Cliente"));
 
@@ -395,7 +400,7 @@ public class CadastroCliente extends javax.swing.JDialog {
                             .addGap(18, 18, 18)
                             .addComponent(btnExcluir, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnCliSair, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -415,7 +420,7 @@ public class CadastroCliente extends javax.swing.JDialog {
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCliSair, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -457,8 +462,13 @@ public class CadastroCliente extends javax.swing.JDialog {
 
     private void btnExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExcluirActionPerformed
         //sair
-        dispose();
+        
     }//GEN-LAST:event_btnExcluirActionPerformed
+
+    private void btnCliSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCliSairActionPerformed
+        //Sair do cadastro de cliente
+        dispose();
+    }//GEN-LAST:event_btnCliSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -508,12 +518,12 @@ public class CadastroCliente extends javax.swing.JDialog {
     private javax.swing.JTextField Rua_Txt;
     private javax.swing.JComboBox<String> Sexo_Txt;
     private javax.swing.JButton btnAlterar;
+    private javax.swing.JButton btnCliSair;
     private javax.swing.JToggleButton btnExcluir;
     private javax.swing.JButton btnPesquisar;
     private javax.swing.JFormattedTextField data_cad;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
