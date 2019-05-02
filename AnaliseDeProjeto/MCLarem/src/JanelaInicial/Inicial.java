@@ -51,6 +51,8 @@ public class Inicial extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JToolBar.Separator();
         btnMenu2Caixa = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
         btnMenu2Sair = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -69,6 +71,7 @@ public class Inicial extends javax.swing.JFrame {
         AjudaBmenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Auto Peças MCLarem");
 
         jToolBar1.setRollover(true);
 
@@ -171,6 +174,23 @@ public class Inicial extends javax.swing.JFrame {
             }
         });
         jToolBar1.add(jButton7);
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(102, 102, 102));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Estoque.png"))); // NOI18N
+        jButton2.setText("Estoque");
+        jButton2.setFocusable(false);
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton2);
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/CaixaF.png"))); // NOI18N
+        jButton1.setText("Fluxo de Caixa");
+        jButton1.setFocusable(false);
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton1);
         jToolBar1.add(jSeparator3);
 
         btnMenu2Sair.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -444,6 +464,8 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JButton btnMenu2Consultar;
     private javax.swing.JButton btnMenu2Produto;
     private javax.swing.JButton btnMenu2Sair;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
