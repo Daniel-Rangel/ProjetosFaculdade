@@ -1,11 +1,12 @@
 package JanelaInicial;
 
 
-import JanelasAtendimento.CadastroCliente;
-import JanelasAtendimento.Caixa;
-import JanelasAtendimento.ConsultarPedidos;
-import JanelasAtendimento.Login;
-import JanelasAtendimento.SelecionarItensVenda;
+import JanVendas.Atendimento.CadastroCliente;
+import JanVendas.Atendimento.MostrarItem;
+import JanVendas.Caixa;
+import JanVendas.ConsultarPedidos;
+import JanVendas.Atendimento.SelecionarItensVenda;
+import JanVendas.ConsultarItem;
 import JanelasEstoque.CadastroFonecedor;
 import JanelasEstoque.CadastroProduto;
 import JanelasEstoque.CadastroDeUsuario;
@@ -121,6 +122,11 @@ public class Inicial extends javax.swing.JFrame {
         btnMenu2Produto.setFocusable(false);
         btnMenu2Produto.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMenu2Produto.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnMenu2Produto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenu2ProdutoActionPerformed(evt);
+            }
+        });
         jToolBar1.add(btnMenu2Produto);
 
         btnMenu2Consultar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -130,6 +136,11 @@ public class Inicial extends javax.swing.JFrame {
         btnMenu2Consultar.setFocusable(false);
         btnMenu2Consultar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnMenu2Consultar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnMenu2Consultar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenu2ConsultarActionPerformed(evt);
+            }
+        });
         jToolBar1.add(btnMenu2Consultar);
         jToolBar1.add(jSeparator2);
 
@@ -184,7 +195,7 @@ public class Inicial extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2881, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2738, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -275,7 +286,9 @@ public class Inicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2871, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 133, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -360,10 +373,22 @@ public class Inicial extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMenu2CaixaActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        // entrar na tela de pedido
-        SelecionarItensVenda btnM2Venda = new SelecionarItensVenda();
-        btnM2Venda.setVisible(true);
+        // entrar na tela de vendedor
+        ConsultarPedidos Cp = new ConsultarPedidos();
+        Cp.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void btnMenu2ProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2ProdutoActionPerformed
+        // Consulta de produto
+        MostrarItem Mti = new MostrarItem();
+        Mti.setVisible(true);
+    }//GEN-LAST:event_btnMenu2ProdutoActionPerformed
+
+    private void btnMenu2ConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2ConsultarActionPerformed
+        // conslutar protudo
+        ConsultarItem Item = new ConsultarItem();
+        Item.setVisible(true);
+    }//GEN-LAST:event_btnMenu2ConsultarActionPerformed
 
     /**
      * @param args the command line arguments
