@@ -6,7 +6,9 @@ import JanelasAtendimento.Caixa;
 import JanelasAtendimento.ConsultarPedidos;
 import JanelasAtendimento.Login;
 import JanelasAtendimento.SelecionarItensVenda;
+import JanelasEstoque.CadastroFonecedor;
 import JanelasEstoque.CadastroProduto;
+import JanelasEstoque.CadastroDeUsuario;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -37,6 +39,18 @@ public class Inicial extends javax.swing.JFrame {
     private void initComponents() {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
+        jToolBar1 = new javax.swing.JToolBar();
+        bntMenu2CadCliente = new javax.swing.JButton();
+        btnMenu2CadFornecedor = new javax.swing.JButton();
+        btnMenu2CadFuncionario = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JToolBar.Separator();
+        btnMenu2Produto = new javax.swing.JButton();
+        btnMenu2Consultar = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JToolBar.Separator();
+        btnMenu2Caixa = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jSeparator3 = new javax.swing.JToolBar.Separator();
+        jButton8 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         ArquivoBMenu = new javax.swing.JMenu();
         LogarUsuario_Aq_BMenu = new javax.swing.JMenuItem();
@@ -52,6 +66,103 @@ public class Inicial extends javax.swing.JFrame {
         AjudaBmenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jToolBar1.setRollover(true);
+
+        bntMenu2CadCliente.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        bntMenu2CadCliente.setForeground(new java.awt.Color(0, 204, 51));
+        bntMenu2CadCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Cliente.png"))); // NOI18N
+        bntMenu2CadCliente.setText("Cliente");
+        bntMenu2CadCliente.setFocusable(false);
+        bntMenu2CadCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bntMenu2CadCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        bntMenu2CadCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bntMenu2CadClienteActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(bntMenu2CadCliente);
+
+        btnMenu2CadFornecedor.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMenu2CadFornecedor.setForeground(new java.awt.Color(255, 51, 51));
+        btnMenu2CadFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Fornecedor.png"))); // NOI18N
+        btnMenu2CadFornecedor.setText("Fornecedor");
+        btnMenu2CadFornecedor.setFocusable(false);
+        btnMenu2CadFornecedor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMenu2CadFornecedor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnMenu2CadFornecedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenu2CadFornecedorActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btnMenu2CadFornecedor);
+
+        btnMenu2CadFuncionario.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMenu2CadFuncionario.setForeground(new java.awt.Color(51, 102, 255));
+        btnMenu2CadFuncionario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Funcionario.png"))); // NOI18N
+        btnMenu2CadFuncionario.setText("Funcionario");
+        btnMenu2CadFuncionario.setFocusable(false);
+        btnMenu2CadFuncionario.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMenu2CadFuncionario.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnMenu2CadFuncionario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenu2CadFuncionarioActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(btnMenu2CadFuncionario);
+        jToolBar1.add(jSeparator1);
+
+        btnMenu2Produto.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMenu2Produto.setForeground(new java.awt.Color(204, 102, 0));
+        btnMenu2Produto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Produtos.png"))); // NOI18N
+        btnMenu2Produto.setText("Produtos");
+        btnMenu2Produto.setFocusable(false);
+        btnMenu2Produto.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMenu2Produto.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnMenu2Produto);
+
+        btnMenu2Consultar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMenu2Consultar.setForeground(new java.awt.Color(102, 102, 102));
+        btnMenu2Consultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/codigoBrr.png"))); // NOI18N
+        btnMenu2Consultar.setText("Consultar");
+        btnMenu2Consultar.setFocusable(false);
+        btnMenu2Consultar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMenu2Consultar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnMenu2Consultar);
+        jToolBar1.add(jSeparator2);
+
+        btnMenu2Caixa.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMenu2Caixa.setForeground(new java.awt.Color(255, 153, 51));
+        btnMenu2Caixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/caixa2.png"))); // NOI18N
+        btnMenu2Caixa.setText("Caixa");
+        btnMenu2Caixa.setFocusable(false);
+        btnMenu2Caixa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnMenu2Caixa.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnMenu2Caixa);
+
+        jButton7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(51, 153, 0));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Localizar.png"))); // NOI18N
+        jButton7.setText("Vendas");
+        jButton7.setFocusable(false);
+        jButton7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton7.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jButton7);
+        jToolBar1.add(jSeparator3);
+
+        jButton8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(204, 0, 0));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Sair.png"))); // NOI18N
+        jButton8.setText("Sair");
+        jButton8.setFocusable(false);
+        jButton8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton8.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        jToolBar1.add(jButton8);
 
         ArquivoBMenu.setText("Arquivos");
 
@@ -133,11 +244,13 @@ public class Inicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 543, Short.MAX_VALUE)
+            .addComponent(jToolBar1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 757, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 382, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 431, Short.MAX_VALUE))
         );
 
         pack();
@@ -186,6 +299,28 @@ public class Inicial extends javax.swing.JFrame {
         cx.setVisible(true);
     }//GEN-LAST:event_AbrirCaixa_AtMenuActionPerformed
 
+    private void bntMenu2CadClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntMenu2CadClienteActionPerformed
+        // TODO add your handling code here:
+        CadastroCliente Cad = new CadastroCliente(this,true);
+        Cad.setVisible(true);
+    }//GEN-LAST:event_bntMenu2CadClienteActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void btnMenu2CadFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CadFornecedorActionPerformed
+        // Cadastra fornecedor
+        CadastroFonecedor Cfor = new CadastroFonecedor();
+        Cfor.setVisible(true);
+    }//GEN-LAST:event_btnMenu2CadFornecedorActionPerformed
+
+    private void btnMenu2CadFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CadFuncionarioActionPerformed
+        // Cadastro De funcionario
+        CadastroDeUsuario UsuCad = new CadastroDeUsuario();
+        UsuCad.setVisible(true);
+    }//GEN-LAST:event_btnMenu2CadFuncionarioActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -233,8 +368,20 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JMenuItem Relatorio;
     private javax.swing.JMenuItem Sair_Aq_BMenu;
     private javax.swing.JMenu at_Consultar_Pedido;
+    private javax.swing.JButton bntMenu2CadCliente;
+    private javax.swing.JButton btnMenu2CadFornecedor;
+    private javax.swing.JButton btnMenu2CadFuncionario;
+    private javax.swing.JButton btnMenu2Caixa;
+    private javax.swing.JButton btnMenu2Consultar;
+    private javax.swing.JButton btnMenu2Produto;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPopupMenu jPopupMenu1;
+    private javax.swing.JToolBar.Separator jSeparator1;
+    private javax.swing.JToolBar.Separator jSeparator2;
+    private javax.swing.JToolBar.Separator jSeparator3;
+    private javax.swing.JToolBar jToolBar1;
     // End of variables declaration//GEN-END:variables
 }
