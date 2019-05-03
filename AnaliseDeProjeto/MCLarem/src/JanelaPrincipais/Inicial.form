@@ -38,6 +38,18 @@
             </MenuItem>
           </SubComponents>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Caixa"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="itemCxAbrirCaixa">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Abrir Caixa"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
         <Menu class="javax.swing.JMenu" name="at_Consultar_Pedido">
           <Properties>
             <Property name="text" type="java.lang.String" value="Atendimento"/>
@@ -67,14 +79,6 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LocalizarCad_AT_BMenuActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="AbrirCaixa_AtMenu">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Abrir Caixa"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AbrirCaixa_AtMenuActionPerformed"/>
-              </Events>
-            </MenuItem>
           </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="FornecedorBMenu">
@@ -91,6 +95,11 @@
               </Events>
             </MenuItem>
           </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Financeiro"/>
+          </Properties>
         </Menu>
         <Menu class="javax.swing.JMenu" name="AjudaBmenu">
           <Properties>
