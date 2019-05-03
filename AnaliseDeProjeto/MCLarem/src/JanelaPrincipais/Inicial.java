@@ -1,10 +1,10 @@
 package JanelaPrincipais;
 
 
+import JanFinanceiro.FluxoDeCaixa;
 import JanVendas.Atendimento.CadastroCliente;
 import JanVendas.Atendimento.MostrarItem;
 import JanVendas.Caixa;
-import JanVendas.ConsultarPedidos;
 import JanVendas.Atendimento.SelecionarItensVenda;
 import JanVendas.ConsultarItem;
 import static JanelaPrincipais.TelaFundo.Fundo;
@@ -205,6 +205,11 @@ public class Inicial extends javax.swing.JFrame {
         jButton1.setFocusable(false);
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jToolBar1.add(jButton1);
         jToolBar1.add(jSeparator3);
 
@@ -368,8 +373,7 @@ public class Inicial extends javax.swing.JFrame {
 
     private void LocalizarCad_AT_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LocalizarCad_AT_BMenuActionPerformed
         // Consultar Cadastro
-        ConsultarPedidos cad = new ConsultarPedidos();
-        cad.setVisible(true);
+        
     }//GEN-LAST:event_LocalizarCad_AT_BMenuActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -398,8 +402,7 @@ public class Inicial extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // entrar na tela de vendedor
-        ConsultarPedidos Cp = new ConsultarPedidos();
-        Cp.setVisible(true);
+        
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void btnMenu2CaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CaixaActionPerformed
@@ -443,6 +446,12 @@ public class Inicial extends javax.swing.JFrame {
         Login lg = new Login();
         lg.setVisible(true);
     }//GEN-LAST:event_btnLoguinActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // Financeiro
+        FluxoDeCaixa fc = new FluxoDeCaixa();
+        fc.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
