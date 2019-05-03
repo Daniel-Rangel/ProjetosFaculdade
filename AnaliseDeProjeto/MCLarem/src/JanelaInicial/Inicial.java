@@ -7,9 +7,12 @@ import JanVendas.Caixa;
 import JanVendas.ConsultarPedidos;
 import JanVendas.Atendimento.SelecionarItensVenda;
 import JanVendas.ConsultarItem;
+import static JanelaInicial.TelaFundo.Fundo;
 import JanelasEstoque.CadastroFonecedor;
 import JanelasEstoque.CadastroProduto;
 import JanelasEstoque.CadastroDeUsuario;
+import JanelasEstoque.JanEstoque;
+import java.util.Locale;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -27,7 +30,15 @@ public class Inicial extends javax.swing.JFrame {
      * Creates new form Inicial
      */
     public Inicial() {
+        this.setExtendedState(MAXIMIZED_BOTH);
         initComponents();
+        
+        try{
+            jdpPrincipal.add(TelaDeFundo);
+            TelaDeFundo.setMaximum(true);
+            TelaDeFundo.setVisible(true);
+        }catch(Exception e){}
+        
     }
 
     /**
@@ -40,7 +51,7 @@ public class Inicial extends javax.swing.JFrame {
     private void initComponents() {
 
         jPopupMenu1 = new javax.swing.JPopupMenu();
-        jPanel1 = new javax.swing.JPanel();
+        jdpPrincipal = new javax.swing.JPanel();
         jToolBar1 = new javax.swing.JToolBar();
         bntMenu2CadCliente = new javax.swing.JButton();
         btnMenu2CadFornecedor = new javax.swing.JButton();
@@ -55,7 +66,7 @@ public class Inicial extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
         btnMenu2Sair = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        btnLoguin = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         ArquivoBMenu = new javax.swing.JMenu();
         LogarUsuario_Aq_BMenu = new javax.swing.JMenuItem();
@@ -182,6 +193,11 @@ public class Inicial extends javax.swing.JFrame {
         jButton2.setFocusable(false);
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jToolBar1.add(jButton2);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -207,23 +223,33 @@ public class Inicial extends javax.swing.JFrame {
         });
         jToolBar1.add(btnMenu2Sair);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/ig[.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        btnLoguin.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        btnLoguin.setText("Loguin");
+        btnLoguin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoguinActionPerformed(evt);
+            }
+        });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 2738, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 786, javax.swing.GroupLayout.PREFERRED_SIZE)
+        javax.swing.GroupLayout jdpPrincipalLayout = new javax.swing.GroupLayout(jdpPrincipal);
+        jdpPrincipal.setLayout(jdpPrincipalLayout);
+        jdpPrincipalLayout.setHorizontalGroup(
+            jdpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jdpPrincipalLayout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(jdpPrincipalLayout.createSequentialGroup()
+                .addGap(573, 573, 573)
+                .addComponent(btnLoguin, javax.swing.GroupLayout.PREFERRED_SIZE, 341, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(574, Short.MAX_VALUE))
+        );
+        jdpPrincipalLayout.setVerticalGroup(
+            jdpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jdpPrincipalLayout.createSequentialGroup()
+                .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 245, Short.MAX_VALUE)
+                .addComponent(btnLoguin)
+                .addContainerGap(372, Short.MAX_VALUE))
         );
 
         ArquivoBMenu.setText("Arquivos");
@@ -306,15 +332,11 @@ public class Inicial extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 133, Short.MAX_VALUE))
+            .addComponent(jdpPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jdpPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -363,34 +385,17 @@ public class Inicial extends javax.swing.JFrame {
         cx.setVisible(true);
     }//GEN-LAST:event_AbrirCaixa_AtMenuActionPerformed
 
-    private void bntMenu2CadClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntMenu2CadClienteActionPerformed
-        // TODO add your handling code here:
-        CadastroCliente Cad = new CadastroCliente(this,true);
-        Cad.setVisible(true);
-    }//GEN-LAST:event_bntMenu2CadClienteActionPerformed
-
     private void btnMenu2SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2SairActionPerformed
         // sair do sistema menu2
         System.exit(0);
     }//GEN-LAST:event_btnMenu2SairActionPerformed
 
-    private void btnMenu2CadFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CadFornecedorActionPerformed
-        // Cadastra fornecedor
-        CadastroFonecedor Cfor = new CadastroFonecedor();
-        Cfor.setVisible(true);
-    }//GEN-LAST:event_btnMenu2CadFornecedorActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // esta lincado com a atela de estoque
+        JanEstoque JEs = new JanEstoque();
+        JEs.setVisible(true);
 
-    private void btnMenu2CadFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CadFuncionarioActionPerformed
-        // Cadastro De funcionario
-        CadastroDeUsuario UsuCad = new CadastroDeUsuario();
-        UsuCad.setVisible(true);
-    }//GEN-LAST:event_btnMenu2CadFuncionarioActionPerformed
-
-    private void btnMenu2CaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CaixaActionPerformed
-        // entrar no caixa
-        Caixa btnCx = new Caixa();
-        btnCx.setVisible(true);
-    }//GEN-LAST:event_btnMenu2CaixaActionPerformed
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // entrar na tela de vendedor
@@ -398,17 +403,47 @@ public class Inicial extends javax.swing.JFrame {
         Cp.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void btnMenu2ProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2ProdutoActionPerformed
-        // Consulta de produto
-        MostrarItem Mti = new MostrarItem();
-        Mti.setVisible(true);
-    }//GEN-LAST:event_btnMenu2ProdutoActionPerformed
+    private void btnMenu2CaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CaixaActionPerformed
+        // entrar no caixa
+        Caixa btnCx = new Caixa();
+        btnCx.setVisible(true);
+    }//GEN-LAST:event_btnMenu2CaixaActionPerformed
 
     private void btnMenu2ConsultarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2ConsultarActionPerformed
         // conslutar protudo
         ConsultarItem Item = new ConsultarItem();
         Item.setVisible(true);
     }//GEN-LAST:event_btnMenu2ConsultarActionPerformed
+
+    private void btnMenu2ProdutoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2ProdutoActionPerformed
+        // Consulta de produto
+        MostrarItem Mti = new MostrarItem();
+        Mti.setVisible(true);
+    }//GEN-LAST:event_btnMenu2ProdutoActionPerformed
+
+    private void btnMenu2CadFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CadFuncionarioActionPerformed
+        // Cadastro De funcionario
+        CadastroDeUsuario UsuCad = new CadastroDeUsuario();
+        UsuCad.setVisible(true);
+    }//GEN-LAST:event_btnMenu2CadFuncionarioActionPerformed
+
+    private void btnMenu2CadFornecedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CadFornecedorActionPerformed
+        // Cadastra fornecedor
+        CadastroFonecedor Cfor = new CadastroFonecedor();
+        Cfor.setVisible(true);
+    }//GEN-LAST:event_btnMenu2CadFornecedorActionPerformed
+
+    private void bntMenu2CadClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntMenu2CadClienteActionPerformed
+        // TODO add your handling code here:
+        CadastroCliente Cad = new CadastroCliente(this,true);
+        Cad.setVisible(true);
+    }//GEN-LAST:event_bntMenu2CadClienteActionPerformed
+
+    private void btnLoguinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoguinActionPerformed
+        // tela de loguin
+        Login lg = new Login();
+        lg.setVisible(true);
+    }//GEN-LAST:event_btnLoguinActionPerformed
 
     /**
      * @param args the command line arguments
@@ -445,6 +480,7 @@ public class Inicial extends javax.swing.JFrame {
         });
     }
 
+    private TelaFundo TelaDeFundo = new TelaFundo();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem AbrirCaixa_AtMenu;
     private javax.swing.JMenuItem AddCadatro_AT_Bmenu;
@@ -458,6 +494,7 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JMenuItem Sair_Aq_BMenu;
     private javax.swing.JMenu at_Consultar_Pedido;
     private javax.swing.JButton bntMenu2CadCliente;
+    private javax.swing.JButton btnLoguin;
     private javax.swing.JButton btnMenu2CadFornecedor;
     private javax.swing.JButton btnMenu2CadFuncionario;
     private javax.swing.JButton btnMenu2Caixa;
@@ -467,14 +504,13 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JToolBar.Separator jSeparator3;
     private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JPanel jdpPrincipal;
     // End of variables declaration//GEN-END:variables
 }
