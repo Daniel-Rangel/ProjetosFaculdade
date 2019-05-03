@@ -7,6 +7,7 @@ package JanelasEstoque;
 
 import javax.swing.SwingConstants;
 import JanelasEstoque.CadastroProduto;
+import JanelasEstoque.JanEstRelatorio;
 /**
  *
  * @author danie
@@ -188,6 +189,11 @@ public class JanEstoque extends javax.swing.JFrame {
         btnRelatorio.setText("Relatório");
         btnRelatorio.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnRelatorio.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnRelatorio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRelatorioActionPerformed(evt);
+            }
+        });
 
         btnPedido.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/pedidoEs.png"))); // NOI18N
@@ -260,6 +266,12 @@ public class JanEstoque extends javax.swing.JFrame {
         // Sair da tela
         dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void btnRelatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRelatorioActionPerformed
+        // Pedir relatório
+        JanEstRelatorio rt = new JanEstRelatorio();
+        rt.setVisible(true);
+    }//GEN-LAST:event_btnRelatorioActionPerformed
 
     /**
      * @param args the command line arguments
