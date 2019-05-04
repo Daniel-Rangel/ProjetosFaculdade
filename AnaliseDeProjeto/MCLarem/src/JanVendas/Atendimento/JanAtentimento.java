@@ -28,31 +28,170 @@ public class JanAtentimento extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        btnVdPeido = new javax.swing.JButton();
+        btnVdConsPedido = new javax.swing.JButton();
+        btnVdConsItem = new javax.swing.JButton();
+        btnVdConsEntrega = new javax.swing.JButton();
+        btnVdTroca = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setText("Atendimento McLarem");
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Pedido do dia"));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null},
+                {null, null, null, null, null, null}
+            },
+            new String [] {
+                "Num. Pedido", "Nome Cliente", "Itens", "Data", "Valor", "Status"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+        if (jTable1.getColumnModel().getColumnCount() > 0) {
+            jTable1.getColumnModel().getColumn(0).setMinWidth(120);
+            jTable1.getColumnModel().getColumn(0).setMaxWidth(120);
+            jTable1.getColumnModel().getColumn(1).setMinWidth(200);
+            jTable1.getColumnModel().getColumn(1).setMaxWidth(300);
+            jTable1.getColumnModel().getColumn(2).setMinWidth(60);
+            jTable1.getColumnModel().getColumn(2).setMaxWidth(60);
+            jTable1.getColumnModel().getColumn(3).setMinWidth(90);
+            jTable1.getColumnModel().getColumn(3).setMaxWidth(90);
+            jTable1.getColumnModel().getColumn(4).setMinWidth(100);
+            jTable1.getColumnModel().getColumn(4).setMaxWidth(100);
+            jTable1.getColumnModel().getColumn(5).setMinWidth(100);
+            jTable1.getColumnModel().getColumn(5).setMaxWidth(100);
+        }
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        btnVdPeido.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnVdPeido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atendimento/VdPedido.png"))); // NOI18N
+        btnVdPeido.setText("Pedido");
+        btnVdPeido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnVdPeido.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        btnVdConsPedido.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnVdConsPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atendimento/VdConsultar.png"))); // NOI18N
+        btnVdConsPedido.setText("Consultar Pedido");
+        btnVdConsPedido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnVdConsPedido.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnVdConsPedido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVdConsPedidoActionPerformed(evt);
+            }
+        });
+
+        btnVdConsItem.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnVdConsItem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atendimento/Vditem.png"))); // NOI18N
+        btnVdConsItem.setText("Consultar Item");
+        btnVdConsItem.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnVdConsItem.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        btnVdConsEntrega.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnVdConsEntrega.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atendimento/VdEntrega.png"))); // NOI18N
+        btnVdConsEntrega.setText("Calcular Entrega");
+        btnVdConsEntrega.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnVdConsEntrega.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        btnVdTroca.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnVdTroca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Atendimento/VdTroca.png"))); // NOI18N
+        btnVdTroca.setText("Trocar Item");
+        btnVdTroca.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnVdTroca.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton1.setText("Sair");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(211, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addContainerGap(246, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnVdPeido, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnVdConsPedido, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnVdConsItem, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnVdTroca, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(btnVdConsEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(489, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnVdPeido)
+                            .addComponent(btnVdConsPedido)
+                            .addComponent(btnVdConsEntrega)
+                            .addComponent(btnVdConsItem)))
+                    .addComponent(btnVdTroca))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 110, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVdConsPedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVdConsPedidoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVdConsPedidoActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // sair
+        dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -90,6 +229,15 @@ public class JanAtentimento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnVdConsEntrega;
+    private javax.swing.JButton btnVdConsItem;
+    private javax.swing.JButton btnVdConsPedido;
+    private javax.swing.JButton btnVdPeido;
+    private javax.swing.JButton btnVdTroca;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

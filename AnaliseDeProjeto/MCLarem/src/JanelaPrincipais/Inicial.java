@@ -3,6 +3,7 @@ package JanelaPrincipais;
 
 import JanFinanceiro.FluxoDeCaixa;
 import JanVendas.Atendimento.CadastroCliente;
+import JanVendas.Atendimento.JanAtentimento;
 import JanVendas.Atendimento.MostrarItem;
 import JanVendas.Caixa;
 import JanVendas.Atendimento.SelecionarItensVenda;
@@ -400,7 +401,8 @@ public class Inicial extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // entrar na tela de vendedor
-        
+        JanAtentimento jat = new JanAtentimento();
+        jat.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void btnMenu2CaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenu2CaixaActionPerformed
