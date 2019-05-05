@@ -1,9 +1,9 @@
 package JanelaPrincipais;
 
 
+import JanVendas.Atendimento.JanAtentimento;
 import JanFinanceiro.FluxoDeCaixa;
 import JanVendas.Atendimento.CadastroCliente;
-import JanVendas.Atendimento.JanAtentimento;
 import JanVendas.Atendimento.MostrarItem;
 import JanVendas.Caixa;
 import JanVendas.Atendimento.SelecionarItensVenda;
@@ -70,17 +70,36 @@ public class Inicial extends javax.swing.JFrame {
         ArquivoBMenu = new javax.swing.JMenu();
         LogarUsuario_Aq_BMenu = new javax.swing.JMenuItem();
         Sair_Aq_BMenu = new javax.swing.JMenuItem();
-        Relatorio = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
-        itemCxAbrirCaixa = new javax.swing.JMenuItem();
+        jM1AbriCx = new javax.swing.JMenuItem();
+        jM1Sangria = new javax.swing.JMenuItem();
         at_Consultar_Pedido = new javax.swing.JMenu();
-        AddCadatro_AT_Bmenu = new javax.swing.JMenuItem();
-        NovoPedido_AT_BMenu = new javax.swing.JMenuItem();
-        LocalizarCad_AT_BMenu = new javax.swing.JMenuItem();
+        jM1Atendimento = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jM1Pedido = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jM2infCli = new javax.swing.JMenuItem();
+        jM2Item = new javax.swing.JMenuItem();
+        jM2Pedidos = new javax.swing.JMenuItem();
+        jM1Troca = new javax.swing.JMenuItem();
+        jM1CalcEntrega = new javax.swing.JMenuItem();
         FornecedorBMenu = new javax.swing.JMenu();
+        jM1Estoque = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jM1CadFornecedor = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jM1Financeiro = new javax.swing.JMenuItem();
+        jM1FicDispesaInc = new javax.swing.JMenuItem();
+        jM1FlxCaixa = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jM2RelAtendimento = new javax.swing.JMenuItem();
+        jM2RelCaixa = new javax.swing.JMenuItem();
+        jM2RelEstoque = new javax.swing.JMenuItem();
+        jM2RelFinanceiro = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
         AjudaBmenu = new javax.swing.JMenu();
+        jM1Suporte = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Auto Peças MCLarem");
@@ -277,49 +296,56 @@ public class Inicial extends javax.swing.JFrame {
         });
         ArquivoBMenu.add(Sair_Aq_BMenu);
 
-        Relatorio.setText("Relatorios");
-        ArquivoBMenu.add(Relatorio);
-
         jMenuBar1.add(ArquivoBMenu);
 
         jMenu1.setText("Caixa");
 
-        itemCxAbrirCaixa.setText("Abrir Caixa");
-        jMenu1.add(itemCxAbrirCaixa);
+        jM1AbriCx.setText("Abrir Caixa");
+        jMenu1.add(jM1AbriCx);
+
+        jM1Sangria.setText("Fechar Caixa");
+        jMenu1.add(jM1Sangria);
 
         jMenuBar1.add(jMenu1);
 
         at_Consultar_Pedido.setText("Atendimento");
 
-        AddCadatro_AT_Bmenu.setText("Novo Cadastro");
-        AddCadatro_AT_Bmenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AddCadatro_AT_BmenuActionPerformed(evt);
-            }
-        });
-        at_Consultar_Pedido.add(AddCadatro_AT_Bmenu);
+        jM1Atendimento.setText("Atendimento");
+        at_Consultar_Pedido.add(jM1Atendimento);
 
-        NovoPedido_AT_BMenu.setText("Novo Pedido");
-        NovoPedido_AT_BMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                NovoPedido_AT_BMenuActionPerformed(evt);
-            }
-        });
-        at_Consultar_Pedido.add(NovoPedido_AT_BMenu);
+        jMenuItem2.setText("Novo Cliente");
+        at_Consultar_Pedido.add(jMenuItem2);
 
-        LocalizarCad_AT_BMenu.setText("Consultar Pedidos");
-        LocalizarCad_AT_BMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LocalizarCad_AT_BMenuActionPerformed(evt);
-            }
-        });
-        at_Consultar_Pedido.add(LocalizarCad_AT_BMenu);
+        jM1Pedido.setText("Novo Pedido");
+        at_Consultar_Pedido.add(jM1Pedido);
+
+        jMenu3.setText("Consultar");
+
+        jM2infCli.setText("Info Cliente");
+        jMenu3.add(jM2infCli);
+
+        jM2Item.setText("item");
+        jMenu3.add(jM2Item);
+
+        jM2Pedidos.setText("Pedidos");
+        jMenu3.add(jM2Pedidos);
+
+        at_Consultar_Pedido.add(jMenu3);
+
+        jM1Troca.setText("Trocar Item");
+        at_Consultar_Pedido.add(jM1Troca);
+
+        jM1CalcEntrega.setText("Calcular Entrega");
+        at_Consultar_Pedido.add(jM1CalcEntrega);
 
         jMenuBar1.add(at_Consultar_Pedido);
 
         FornecedorBMenu.setText("Estoque");
 
-        jMenuItem1.setText("Cadastrar item");
+        jM1Estoque.setText("Estoque");
+        FornecedorBMenu.add(jM1Estoque);
+
+        jMenuItem1.setText("Novo Item");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -327,12 +353,61 @@ public class Inicial extends javax.swing.JFrame {
         });
         FornecedorBMenu.add(jMenuItem1);
 
+        jM1CadFornecedor.setText("Cadastrar Fornecedor");
+        FornecedorBMenu.add(jM1CadFornecedor);
+
+        jMenuItem3.setText("Fazer Pedido");
+        FornecedorBMenu.add(jMenuItem3);
+
         jMenuBar1.add(FornecedorBMenu);
 
         jMenu2.setText("Financeiro");
+
+        jM1Financeiro.setText("Financeiro");
+        jM1Financeiro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jM1FinanceiroActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jM1Financeiro);
+
+        jM1FicDispesaInc.setText("Incluir Dispesa");
+        jMenu2.add(jM1FicDispesaInc);
+
+        jM1FlxCaixa.setText("Fluxo de Caixa");
+        jM1FlxCaixa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jM1FlxCaixaActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jM1FlxCaixa);
+
+        jMenu4.setText("Relatórios");
+
+        jM2RelAtendimento.setText("Atendimento");
+        jMenu4.add(jM2RelAtendimento);
+
+        jM2RelCaixa.setText("Caixa");
+        jMenu4.add(jM2RelCaixa);
+
+        jM2RelEstoque.setText("Estoque");
+        jMenu4.add(jM2RelEstoque);
+
+        jM2RelFinanceiro.setText("Financeiro");
+        jMenu4.add(jM2RelFinanceiro);
+
+        jMenu2.add(jMenu4);
+
+        jMenuItem4.setText("Excluir Dispesa");
+        jMenu2.add(jMenuItem4);
+
         jMenuBar1.add(jMenu2);
 
         AjudaBmenu.setText("Ajuda");
+
+        jM1Suporte.setText("Suporte");
+        AjudaBmenu.add(jM1Suporte);
+
         jMenuBar1.add(AjudaBmenu);
 
         setJMenuBar(jMenuBar1);
@@ -351,35 +426,6 @@ public class Inicial extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void AddCadatro_AT_BmenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddCadatro_AT_BmenuActionPerformed
-     CadastroCliente Cad = new CadastroCliente(this,true);
-     Cad.setVisible(true);
-        
-    }//GEN-LAST:event_AddCadatro_AT_BmenuActionPerformed
-
-    private void LogarUsuario_Aq_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogarUsuario_Aq_BMenuActionPerformed
-        Login lg = new Login();
-        lg.setVisible(true);
-            
-
-    }//GEN-LAST:event_LogarUsuario_Aq_BMenuActionPerformed
-
-    private void Sair_Aq_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sair_Aq_BMenuActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_Sair_Aq_BMenuActionPerformed
-
-    private void NovoPedido_AT_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NovoPedido_AT_BMenuActionPerformed
-        // Tela de pedidos
-        SelecionarItensVenda item = new SelecionarItensVenda();
-        item.setVisible(true);
-    }//GEN-LAST:event_NovoPedido_AT_BMenuActionPerformed
-
-    private void LocalizarCad_AT_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LocalizarCad_AT_BMenuActionPerformed
-        // Consultar Cadastro
-        
-    }//GEN-LAST:event_LocalizarCad_AT_BMenuActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         //Cadastro de protudos
@@ -453,6 +499,25 @@ public class Inicial extends javax.swing.JFrame {
         fc.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jM1FlxCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jM1FlxCaixaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jM1FlxCaixaActionPerformed
+
+    private void jM1FinanceiroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jM1FinanceiroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jM1FinanceiroActionPerformed
+
+    private void Sair_Aq_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Sair_Aq_BMenuActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_Sair_Aq_BMenuActionPerformed
+
+    private void LogarUsuario_Aq_BMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogarUsuario_Aq_BMenuActionPerformed
+        Login lg = new Login();
+        lg.setVisible(true);
+
+    }//GEN-LAST:event_LogarUsuario_Aq_BMenuActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -490,14 +555,10 @@ public class Inicial extends javax.swing.JFrame {
 
     private TelaFundo TelaDeFundo = new TelaFundo();
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem AddCadatro_AT_Bmenu;
     private javax.swing.JMenu AjudaBmenu;
     private javax.swing.JMenu ArquivoBMenu;
     private javax.swing.JMenu FornecedorBMenu;
-    private javax.swing.JMenuItem LocalizarCad_AT_BMenu;
     private javax.swing.JMenuItem LogarUsuario_Aq_BMenu;
-    private javax.swing.JMenuItem NovoPedido_AT_BMenu;
-    private javax.swing.JMenuItem Relatorio;
     private javax.swing.JMenuItem Sair_Aq_BMenu;
     private javax.swing.JMenu at_Consultar_Pedido;
     private javax.swing.JButton bntMenu2CadCliente;
@@ -508,14 +569,37 @@ public class Inicial extends javax.swing.JFrame {
     private javax.swing.JButton btnMenu2Consultar;
     private javax.swing.JButton btnMenu2Produto;
     private javax.swing.JButton btnMenu2Sair;
-    private javax.swing.JMenuItem itemCxAbrirCaixa;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton7;
+    private javax.swing.JMenuItem jM1AbriCx;
+    private javax.swing.JMenuItem jM1Atendimento;
+    private javax.swing.JMenuItem jM1CadFornecedor;
+    private javax.swing.JMenuItem jM1CalcEntrega;
+    private javax.swing.JMenuItem jM1Estoque;
+    private javax.swing.JMenuItem jM1FicDispesaInc;
+    private javax.swing.JMenuItem jM1Financeiro;
+    private javax.swing.JMenuItem jM1FlxCaixa;
+    private javax.swing.JMenuItem jM1Pedido;
+    private javax.swing.JMenuItem jM1Sangria;
+    private javax.swing.JMenuItem jM1Suporte;
+    private javax.swing.JMenuItem jM1Troca;
+    private javax.swing.JMenuItem jM2Item;
+    private javax.swing.JMenuItem jM2Pedidos;
+    private javax.swing.JMenuItem jM2RelAtendimento;
+    private javax.swing.JMenuItem jM2RelCaixa;
+    private javax.swing.JMenuItem jM2RelEstoque;
+    private javax.swing.JMenuItem jM2RelFinanceiro;
+    private javax.swing.JMenuItem jM2infCli;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;

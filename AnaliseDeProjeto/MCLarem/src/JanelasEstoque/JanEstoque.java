@@ -197,7 +197,7 @@ public class JanEstoque extends javax.swing.JFrame {
 
         btnPedido.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnPedido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/pedidoEs.png"))); // NOI18N
-        btnPedido.setText("Comprar");
+        btnPedido.setText("Nv Pedido");
         btnPedido.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnPedido.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
