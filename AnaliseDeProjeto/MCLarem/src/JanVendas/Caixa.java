@@ -5,6 +5,8 @@
  */
 package JanVendas;
 
+import JanVendas.Atendimento.MostrarItem;
+
 /**
  *
  * @author danie
@@ -37,12 +39,12 @@ public class Caixa extends javax.swing.JFrame {
         id_ItensVenda = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        jButton4 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        bntFinalizaCompra = new javax.swing.JButton();
+        btnCxItemNv = new javax.swing.JButton();
+        btnCxCanselar = new javax.swing.JButton();
+        btnLocalizaCli = new javax.swing.JButton();
+        btnFuncoesCx = new javax.swing.JButton();
+        btnCalcEntrega = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         id_itensVenda = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -114,23 +116,58 @@ public class Caixa extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel5.setText("Lista de itens: ");
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton4.setText("Finalizar Compra");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        bntFinalizaCompra.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        bntFinalizaCompra.setText("Finalizar Compra");
+        bntFinalizaCompra.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                bntFinalizaCompraActionPerformed(evt);
             }
         });
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Produtos.png"))); // NOI18N
+        btnCxItemNv.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCxItemNv.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Produtos.png"))); // NOI18N
+        btnCxItemNv.setText("Novo Item");
+        btnCxItemNv.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCxItemNv.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCxItemNv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCxItemNvActionPerformed(evt);
+            }
+        });
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Canselar.png"))); // NOI18N
+        btnCxCanselar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCxCanselar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Canselar.png"))); // NOI18N
+        btnCxCanselar.setText("Excluir Item");
+        btnCxCanselar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCxCanselar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/boss.png"))); // NOI18N
+        btnLocalizaCli.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnLocalizaCli.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/boss.png"))); // NOI18N
+        btnLocalizaCli.setText("Pedido");
+        btnLocalizaCli.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnLocalizaCli.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnLocalizaCli.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLocalizaCliActionPerformed(evt);
+            }
+        });
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/caixa2.png"))); // NOI18N
+        btnFuncoesCx.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnFuncoesCx.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/caixa2.png"))); // NOI18N
+        btnFuncoesCx.setText("Funções");
+        btnFuncoesCx.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnFuncoesCx.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnFuncoesCx.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFuncoesCxActionPerformed(evt);
+            }
+        });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Entrega.png"))); // NOI18N
+        btnCalcEntrega.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCalcEntrega.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Entrega.png"))); // NOI18N
+        btnCalcEntrega.setText("Entrega");
+        btnCalcEntrega.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCalcEntrega.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -159,15 +196,15 @@ public class Caixa extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCxItemNv, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCxCanselar, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnLocalizaCli, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCalcEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnFuncoesCx, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -186,7 +223,7 @@ public class Caixa extends javax.swing.JFrame {
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ValorrTotalItem, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(bntFinalizaCompra, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(id_itensVenda, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
@@ -197,11 +234,11 @@ public class Caixa extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnLocalizaCli, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnCalcEntrega, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnCxItemNv, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnFuncoesCx, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCxCanselar, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(id_ItensVenda, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -231,7 +268,7 @@ public class Caixa extends javax.swing.JFrame {
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
+                    .addComponent(bntFinalizaCompra, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
@@ -244,9 +281,29 @@ public class Caixa extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void bntFinalizaCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntFinalizaCompraActionPerformed
+        // Finaliza a compra
+        FinalizarCompra fc = new FinalizarCompra();
+        fc.setVisible(true);
+    }//GEN-LAST:event_bntFinalizaCompraActionPerformed
+
+    private void btnCxItemNvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCxItemNvActionPerformed
+        // Adicionar mais um item
+        MostrarItem Mt = new MostrarItem();
+        Mt.setVisible(true);
+    }//GEN-LAST:event_btnCxItemNvActionPerformed
+
+    private void btnFuncoesCxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFuncoesCxActionPerformed
+        // Funções do caixa
+        FuncoesCaixa fc = new FuncoesCaixa();
+        fc.setVisible(true);
+    }//GEN-LAST:event_btnFuncoesCxActionPerformed
+
+    private void btnLocalizaCliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLocalizaCliActionPerformed
+        // Inclui a compra do cliente
+        LocalizarClienteCx lcc = new LocalizarClienteCx();
+        lcc.setVisible(true);
+    }//GEN-LAST:event_btnLocalizaCliActionPerformed
 
     /**
      * @param args the command line arguments
@@ -286,14 +343,14 @@ public class Caixa extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField ValorItem;
     private javax.swing.JTextField ValorrTotalItem;
+    private javax.swing.JButton bntFinalizaCompra;
+    private javax.swing.JButton btnCalcEntrega;
+    private javax.swing.JButton btnCxCanselar;
+    private javax.swing.JButton btnCxItemNv;
+    private javax.swing.JButton btnFuncoesCx;
+    private javax.swing.JButton btnLocalizaCli;
     private javax.swing.JLabel id_ItensVenda;
     private javax.swing.JTextField id_itensVenda;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
