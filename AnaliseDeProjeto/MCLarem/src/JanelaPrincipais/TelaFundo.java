@@ -21,7 +21,7 @@ public class TelaFundo extends javax.swing.JInternalFrame {
         initComponents();
         
         try{
-            Fundo = javax.imageio.ImageIO.read(new java.net.URL(getClass().getResource("Fundo.jpg"),"Fundo.jpg"));
+            Fundo = javax.imageio.ImageIO.read(new java.net.URL(getClass().getResource("WIDE2.jpg"),"WIDE2.jpg"));
         } catch(Exception e){}
         
     }

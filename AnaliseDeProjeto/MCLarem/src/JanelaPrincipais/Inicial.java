@@ -107,7 +107,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.setRollover(true);
 
         bntMenu2CadCliente.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        bntMenu2CadCliente.setForeground(new java.awt.Color(0, 204, 51));
         bntMenu2CadCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Cliente.png"))); // NOI18N
         bntMenu2CadCliente.setText("Cliente");
         bntMenu2CadCliente.setFocusable(false);
@@ -121,7 +120,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(bntMenu2CadCliente);
 
         btnMenu2CadFornecedor.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMenu2CadFornecedor.setForeground(new java.awt.Color(255, 51, 51));
         btnMenu2CadFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Fornecedor.png"))); // NOI18N
         btnMenu2CadFornecedor.setText("Fornecedor");
         btnMenu2CadFornecedor.setFocusable(false);
@@ -135,7 +133,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(btnMenu2CadFornecedor);
 
         btnMenu2CadFuncionario.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMenu2CadFuncionario.setForeground(new java.awt.Color(51, 102, 255));
         btnMenu2CadFuncionario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Funcionario.png"))); // NOI18N
         btnMenu2CadFuncionario.setText("Funcionario");
         btnMenu2CadFuncionario.setFocusable(false);
@@ -150,7 +147,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(jSeparator1);
 
         btnMenu2Produto.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMenu2Produto.setForeground(new java.awt.Color(204, 102, 0));
         btnMenu2Produto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Produtos.png"))); // NOI18N
         btnMenu2Produto.setText("Produtos");
         btnMenu2Produto.setFocusable(false);
@@ -164,7 +160,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(btnMenu2Produto);
 
         btnMenu2Consultar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMenu2Consultar.setForeground(new java.awt.Color(102, 102, 102));
         btnMenu2Consultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/codigoBrr.png"))); // NOI18N
         btnMenu2Consultar.setText("Consultar");
         btnMenu2Consultar.setFocusable(false);
@@ -179,7 +174,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(jSeparator2);
 
         btnMenu2Caixa.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMenu2Caixa.setForeground(new java.awt.Color(255, 153, 51));
         btnMenu2Caixa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/caixa2.png"))); // NOI18N
         btnMenu2Caixa.setText("Caixa");
         btnMenu2Caixa.setFocusable(false);
@@ -193,7 +187,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(btnMenu2Caixa);
 
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(51, 153, 0));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Localizar.png"))); // NOI18N
         jButton7.setText("Atendimento");
         jButton7.setFocusable(false);
@@ -207,7 +200,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(jButton7);
 
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 153, 153));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Estoque.png"))); // NOI18N
         jButton2.setText("Estoque");
         jButton2.setFocusable(false);
@@ -221,7 +213,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(jButton2);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 102, 0));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/CaixaF.png"))); // NOI18N
         jButton1.setText("Financeiro");
         jButton1.setFocusable(false);
@@ -236,7 +227,6 @@ public class Inicial extends javax.swing.JFrame {
         jToolBar1.add(jSeparator3);
 
         btnMenu2Sair.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMenu2Sair.setForeground(new java.awt.Color(204, 0, 0));
         btnMenu2Sair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/Menu2/Sair.png"))); // NOI18N
         btnMenu2Sair.setText("Sair");
         btnMenu2Sair.setFocusable(false);
