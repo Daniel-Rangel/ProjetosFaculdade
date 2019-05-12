@@ -1,0 +1,53 @@
+
+*{
+    margin: none;
+}
+
+.todo{
+    padding: 0;
+}
+
+.row [class^=col-],.row .col {
+    height: 50px;
+    border: #2ce026 solid 1px;
+}
+/*menu com boot*/
+.br_menu{
+    margin-top: 3px;
+    margin: 3px 0px;
+    background-color: #2ce026; 
+    
+}
+
+.row .buscar{
+    background-color: #b3a5e6;
+    widows: 100%;
+}
+.buscar .busca{
+    
+    padding-top: 1%;
+}
+
+.top1 img{
+    padding-left: 5px;
+}
+
+.top1 .txt h6{
+    font-size: 16px;
+    margin: none;
+}
+
+.top1 .txt p{
+    font-size: 12px;
+}
+
+.top1 a{
+    padding: 0;
+}
+
+
+
+.row .menuites{
+    background-color: #2ce026;
+
+}
