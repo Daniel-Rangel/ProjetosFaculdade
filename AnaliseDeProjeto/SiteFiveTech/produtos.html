@@ -18,14 +18,14 @@
                 <!--menu a esquerda responsivo-->
                 <div class="collapse navbar-collapse" id="navBarMenu">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item " >
                                 <a href="index.html" class="nav-link ">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a href="produtos.html" class="nav-link" >Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" >Cadastrese</a>
+                            <a href="cadastro.html" class="nav-link" >Cadastro</a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link" >Sobre Nós</a>
@@ -50,6 +50,9 @@
                     </form>
                     <div class="navbar-nav">
                         <a href="#" class="nav-link">Entrar</a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Carrinho</a>
                     </div>
                 </div>
             </div>
@@ -153,13 +156,13 @@
                         </div>
                         <div class="col-sm-4 mt-3">
                             <div class="card">
-                                    <img class="card-img-top img-fluid" src="assets/imagens/paraVenda/farol.jpg">
+                                <img class="card-img-top img-fluid" src="assets/imagens/paraVenda/farol.jpg">
                                 <div class="card-body">
                                     <h4 class="card-title">Kit de Farol</h4>
                                     <h7 class="card-subtitle mb-2 text-muted">kit Dianteiro</h7>
                                     <p class="cart-text">R$ 150,00</p>
-                                    <a href="#" class="card-link">Comprar</a>
-                                    <a href="#" class="card-link align-text-bottom">Saiba Mais...</a>
+                                    <a href="#" class="card-link"  data-toggle="modal" data-target="#siteCompras">Comprar</a>
+                                    <a href="#" class="card-link">Saiba Mais...</a>
                                 </div>
                             </div>
                         </div>
@@ -167,10 +170,64 @@
                     </div>
                 </div>
             </div>
-
+            <!-- da area de vendas div logo abaixo indica o que é a divi container-->
         </div>
 
+        <!--div de com o modal-->
+        <div class="modal fade" id="siteCompras" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!--cabeça do modal-->
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nome do Produto</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
 
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="assets/imagens/paraVenda/farol.jpg" width="200" height="200">
+                                </div>
+                                <div class="col">
+                                    <h4>Valor</h4>
+                                    <p>R$ 150,00</p>
+                                    <h5>Breve Descrição</h5>
+                                    <p>Farol para uso frontal de um determinado veiculo</p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <h4 >Itens compativel com seu Produto:</h4>
+                                <div class="col">
+                                    <img src="assets/imagens/paraVenda/lanternas.jpg" width="120">
+                                    <h7>kit Farol</h7>
+                                    <p>Valor R$115,85</p>
+                                </div>
+                                <div class="col">
+                                        <img src="assets/imagens/paraVenda/lanternas.jpg" width="120">
+                                        <h7>kit Farol</h7>
+                                        <p>Valor R$135,75</p>
+                                </div>
+                                <div class="col">
+                                        <img src="assets/imagens/paraVenda/lanternas.jpg" width="120">
+                                        <h7>kit Farol</h7>
+                                        <p>Valor R$120,00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Adicionar ao Carrinho</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button> 
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
 
 
 

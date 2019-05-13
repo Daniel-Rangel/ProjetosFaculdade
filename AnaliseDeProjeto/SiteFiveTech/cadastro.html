@@ -3,35 +3,146 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=0"/>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title> testando </title>
-       
-       
-       <style type="text/css"> 
-            .row{
-                background-color:aqua;
-                padding:10px;
-                height: 500px;
-            }
-            .row [class^=col-],.row .col {
-                border: solid 1px #000;
-                height: 50px;
-            }
-
-            .avatar{
-                width: 50px;
-                height: 50px;
-                
-            }
-            .media{
-                background-color: #ff8800;
-            }
-        </style>
     </head>
     <body>
-        
+        <!--menu-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <!--botão de 3 traços-->
+                <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navBarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--menu responsivo-->
+                <div class="collapse navbar-collapse" id="navBarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                                <a href="index.html " class="nav-link ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="produtos.html" class="nav-link " >Produtos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="cadastro.html" class="nav-link" >Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" >Sobre Nós</a>
+                        </li>
+                    </ul>
+                    <!--MEnu dropdown-->
+                    <ul class="navbar-nav ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" href="#">Social</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">face</a>
+                                <a class="dropdown-item" href="#">teste1</a>
+                                <a class="dropdown-item" href="#">Vaca</a>
+                            </div>
+                        </li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <form class="form-inline ml-auto mr-3">
+                        <input type="search" placeholder="Buscar..." class="form-control ml-1 mr-1">
+                        <button class="btn btn-dark" type="submit">OK</button>
+                    </form>
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Entrar</a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a href="#" class="nav-link">Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Msg de Cadatro-->
+        <div class="container">
 
-        <script type="text/script" src="assets/Js/jquery.js"></script>
-        <script type="text/script" src="assets/Js/bootstrap.bundle.min.js"></script> 
+            <div class="row">
+
+                <div class="col-12 text-center my-2">
+                    <h1 class="display-3">Para Clientes</h1>
+                    <p >Preencha todos os Campos</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+
+                <div class="col-sm-12" col-ml-10 col-lg-8>
+                    <form>
+                        <div class="form-row">
+
+                            <div class="form-group col-sm-6">
+
+                                <label for="inputNome">Nome:</label>
+
+                                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                            </div>
+
+                            <div class="form-group col-sm-6">
+
+                                <label for="inputSobreNome">Seu sobre Nome:</label>
+                                <input type="text" class="form-control" id="inputSobreNome" placeholder="Sobre Nome">
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-sm-12">
+
+                                <label for="inputEnd">Endereço:</label>
+                                <input type="text" class="form-control" id="inputEnd" placeholder="Seu endereço">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+
+                                <label for="inputCid">Cidade:</label>
+                                <input type="text" class="form-control" id="inputCid" placeholder="Sua cidade">
+                            </div>
+                        
+                            <div class="form-group col-sm-4">
+
+                                <label for="inputEst">Estado:</label>
+                                <select id="inputEst" class="form-control">
+                                    <option selected>Escolha </option>
+                                    <option >Estado 1</option>
+                                    <option >Estado 2</option>
+                                    <option >Estado 3</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <label for="inputCep">Cep:</label>
+                                <input type="text" class="form-control" id="inputCep" placeholder="Seu endereço">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox">Desejo Receber Promosoções.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-dark">Salvar</button>
+                            </div>
+                        </div>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <script type="text/javascript" src="assets/Js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/Js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
