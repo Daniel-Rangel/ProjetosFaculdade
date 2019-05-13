@@ -24,8 +24,12 @@
                         <li class="nav-item">
                             <a href="produtos.html" class="nav-link " >Produtos</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="cadastro.html" class="nav-link" >Cadastro</a>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cadastro</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="cadCliente.html">Cliente</a>
+                                <a class="dropdown-item" href="cadFornecedor.html">Fornecedor</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link" >Sobre Nós</a>
@@ -36,7 +40,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" href="#">Social</a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">face</a>
+                                <a class="dropdown-item" href="#">FaceBook</a>
                                 <a class="dropdown-item" href="#">teste1</a>
                                 <a class="dropdown-item" href="#">Vaca</a>
                             </div>
@@ -59,7 +63,7 @@
         </nav>
 
         <!--carrosel-->
-        <div class="container" >
+        <div class="container mt-2" >
             <div class="slide carousel" id="carouselMclarem" >
                 <!--idicadores do carousel-->
                 <ol class="carousel-indicators">
@@ -107,35 +111,74 @@
         
             <div class="row">
                 <!-- aqui vai uma nav-->
-                <div class="col-3">
-                    <nav id="navbarVertical" class="navbar navbar-light bg-light">
-                        <h6>Opções de de produtos:</h6>
-                        <nav class="nav nav-pills flex-column">
-                            <a href="#item1" class="nav-link">item 1</a>
-                                <nav class="nav nav-pllis flex-column">
-                                    <a href="#item1-1" class="nav-link ml-3">Sub item 1</a>
-                                    <a href="#item1-2" class="nav-link ml-3">Sub item 2</a>
-                                    <a href="#item1-3" class="nav-link ml-3">Sub item 3</a>
-                                </nav>
-                            <a href="item2" class="nav-link">item 2</a>
-                            <a href="item3" class="nav-link">item 3</a>
+            <div class="col-3">
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                    <h6>Opções de produtos:</h6>
+                    <nav class="nav nav-pills flex-column">
+                        <a href="#item1" class="nav-link text-secondary">item 1</a>
                             <nav class="nav nav-pllis flex-column">
-                                <a href="#item3-1" class="nav-link ml-3">Sub item 1</a>
-                                <a href="#item3-2" class="nav-link ml-3">Sub item 2</a>
-                                <a href="#item3-3" class="nav-link ml-3">Sub item 3</a>
+                                <a href="#item1-1" class="nav-link ml-3 text-secondary">Sub item 1</a>
+                                <a href="#item1-2" class="nav-link ml-3 text-secondary">Sub item 2</a>
+                                <a href="#item1-3" class="nav-link ml-3 text-secondary">Sub item 3</a>
+                            </nav>
+                        <a href="item2" class="nav-link text-secondary">item 2</a>
+                        <a href="item3" class="nav-link text-secondary">item 3</a>
+                        <nav class="nav nav-pllis flex-column">
+                            <a href="#item3-1" class="nav-link ml-3 text-secondary">Sub item 1</a>
+                            <a href="#item3-2" class="nav-link ml-3 text-secondary">Sub item 2</a>
+                            <a href="#item3-3" class="nav-link ml-3 text-secondary">Sub item 3</a>
                             </nav>
                         </nav>
                     </nav>
-                </div>
-                <div class="row">
-                    aqui vai uma texto de exibição com foto falando um pouco da empreza
-                </div>
+            </div>
+            <div class="row">
+                aqui vai uma texto de exibição com foto falando um pouco da empreza
+            </div>
+            </div>
         </div>
-        <div class="container">
+    <!--footer-->
+    <div class="row text-light bg-dark mt-3">
 
-            
-
+        <div class="container ">
+            <div class="row mt-3">
+                <div class="col-12"></div>
+                <div class="col-sm-3">
+                    <h3>Nome da Empresa</h3>
+                    <p class="text-justify mt-3">Lorem ipsum aliquam torquent magna porta purus,  pretium, ornare id lectus elementum molestie.</p>
+                    <p class="text-justify">n pharetra vivamus sed interdum imperdiet sem luctus turpis <a href="#" class="text-secondary">Saiba mais...</a></p>
+                </div>
+                <div class="col-sm-3 ">
+                    <h3>Menu</h3>
+                    <div class="btn-group-vertical btn-block">
+                        <a href="#" class="btn btn-dark">Produtos</a>
+                        <a href="#" class="btn btn-dark">Cadastrar Cliente</a>
+                        <a href="#" class="btn btn-dark">Cadastrar Fornecedor</a>
+                        <a href="#" class="btn btn-dark">Carinho</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Social</h3>
+                    <div class="btn-group-vertical btn-block btn-group-lg " >
+                        <a href="#" class="btn btn-outline-primary border-0">FaceBook</a>
+                        <a href="#" class="btn btn-outline-info  border-0">Twitter</a>
+                        <a href="#" class="btn btn-outline-warning  border-0">Instagram</a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Parcerias</h3>
+                    
+                </div>
+                <div class="col-12 mt-5">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">
+                            O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho.
+                        </p>
+                        <footer class="bockquote-footer">Biz Stone <cite title="Titulo">Fundador do Twitter</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
         </div>
+    </div>
 
 
 
