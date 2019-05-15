@@ -24,7 +24,7 @@
                         <li class="nav-item">
                             <a href="produtos.html" class="nav-link " >Produtos</a>
                         </li>
-                        <li class="nav-item  dropdown active">
+                        <li class="nav-item  dropdown ">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >Cadastro</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="cadCliente.html">Cliente</a>
@@ -41,8 +41,8 @@
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" href="#">Social</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">FaceBook</a>
-                                <a class="dropdown-item" href="#">teste1</a>
-                                <a class="dropdown-item" href="#">Vaca</a>
+                                <a class="dropdown-item" href="#">Twitter</a>
+                                <a class="dropdown-item" href="#">YouTube</a>
                             </div>
                         </li>
                     </ul>
@@ -54,14 +54,96 @@
                         <a href="#" class="nav-link">Entrar</a>
                     </div>
                     <div class="navbar-nav">
-                        <a href="carrinho.html" class="nav-link">Carrinho</a>
+                        <a href="carrinho.html" class="nav-link active">Carrinho<span class="badge badge-danger badge-pill">3</span></a>
                     </div>
                 </div>
             </div>
         </nav>
         <!--Msg de Carrinho-->
+        <div class="row mt-3 mx-5">
+            <div class="col-12 bg-light mb-3"><h1 class="text-center">Produtos adicionados</h1></div>
+            
+            <div class="col-8 bg-light px-0">
+                <table class="table  table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Item</th>
+                            <th>Quantidade</th>
+                            <th>Valor Unitario</th>
+                            <th>Valor Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th>kit de Vela texto de teste para ver como fica</th>
+                            <th>2</th>
+                            <th>R$ 30,00</th>
+                            <th>R$ 60,00</th>
+                            <th><a href="#" class="btn btn-light botoes2">x</a></th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th>kit 2</th>
+                            <th>2</th>
+                            <th>R$ 40,00</th>
+                            <th>R$ 80,00</th>
+                            <th><a href="#" class="btn btn-light botoes2">x</a></th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th>kit 3</th>
+                            <th>2</th>
+                            <th>R$ 20,00</th>
+                            <th>R$ 40,00</th>
+                            <th><a href="#" class="btn btn-light botoes2">x</a></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-4 tabela2">
+                <div class="row bg-light">
+                    <div class="col-12 pr-0 mb-1">
+                        <table class="table table-hover table-borderless pb-1">
+                            <thead class="bg-dark text-light text-center">
+                                <tr>
+                                    <td colspan="2">Valores Totais</td>
+                                </tr>
+                            </thead>
+                            <tbody class="">
+                                    <tr>
+                                        <td>SubTotal</td>
+                                        <td>R$ 180,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Entrega</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>R$ 180,00</td>
+                                    </tr>
+                            </tbody>
+                        </table>    
+                    </div>
+                    <div class="col-12 cxbtn justify-content-end align-items-end pr-0" style="height: 100px;">
+
+                            <button class="btn btn-secondary btn-block botoes">Finalizar Compra</button>
+                            <button class="btn btn-secondary btn-block botoes2">Canselar Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <div class="row mt-5 bg-dark justify-content-center text-light">
+        <div class="row">
+
+        </div>
+        
+        
+        <!--Footer-->
+        <div class="row mt-4 bg-dark justify-content-center text-light">
             <blockquote class="blockquote text-center">
                 <p class="mb-0">
                     O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho.
@@ -70,8 +152,6 @@
             </blockquote>
         </div>
         
-
-
         <script type="text/javascript" src="assets/Js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="assets/Js/bootstrap.bundle.min.js"></script>
     </body>

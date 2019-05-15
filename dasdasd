@@ -1,0 +1,246 @@
+[33mcommit d6b6f9c1cdd90731fd8f2e832e3cf3e3951dbca0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mfaculdade/master[m[33m)[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Tue May 14 16:06:16 2019 -0300
+
+    preparando o carrinho
+
+[33mcommit 552de935d14df19247572d0d9a70b336ca1f3855[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Tue May 14 15:24:13 2019 -0300
+
+    modificado a pagina inicial
+
+[33mcommit 2f9c5be054a06eccdd2e7987a26847ec7f3986e9[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Mon May 13 16:10:21 2019 -0300
+
+    mudança no footer, add paginação em produtos
+
+[33mcommit c1d309e1acc9eeffeadbb4cb9811569417eeb7aa[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Mon May 13 14:08:24 2019 -0300
+
+    adicionado cadastro, modificato teste , e adicionado footer
+
+[33mcommit 0d40e2cc32c9af79a7f2eb33a5cd37ddca18a16d[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Mon May 13 02:35:16 2019 -0300
+
+    adicionado mais algumas funções e formulario
+
+[33mcommit e8f943abcc2051e27bd8f4f0e25bbe6b986c3da7[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sun May 12 20:12:43 2019 -0300
+
+    adicionado mais funcões no site
+
+[33mcommit ecf21a09647cb79dbd1fa1433683cbe58e0e76f3[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sun May 12 14:21:32 2019 -0300
+
+    mudança de no html
+
+[33mcommit 464f594ee7eba677ba6dba67ff4e9a00870dfed3[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu May 9 15:16:08 2019 -0300
+
+    add pasta do site de um outro projeto
+
+[33mcommit 8a8a8dde220b5473edcf93741f331c8cc071be18[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Tue May 7 16:07:18 2019 -0300
+
+    feito salvamento de arquivos não salvos pelo netBeans
+
+[33mcommit 85ac2122e22a372086e54a8579f27fd1bdf0d4a8[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Tue May 7 16:04:58 2019 -0300
+
+    trocado a tela de fundo para personalizadas2
+
+[33mcommit 083332a8ae74bfe88135cd035d5d8ec1810a722f[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Tue May 7 15:53:29 2019 -0300
+
+    trocado a tela de fundo para personalizada
+
+[33mcommit 7ec7f262007b274ac7c5aebf3b766f9ef2a300a5[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sun May 5 11:21:16 2019 -0300
+
+    adicionado informações não salvas nos commites aterior
+
+[33mcommit 69a93c94e51b3188f080843c410b85b008f5c6cf[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sun May 5 11:19:44 2019 -0300
+
+    feito telas que complementão o caixa
+
+[33mcommit 83c49e9c91989a53b358ff8d683c7fa0b29ff8b2[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sun May 5 09:24:02 2019 -0300
+
+    Adicionado item no menu inicial
+
+[33mcommit 9c0cf1fd6cf4bbcd7dfc3ea9795cf161f60ab6e2[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat May 4 18:26:36 2019 -0300
+
+    adicionado pequenas auterações
+
+[33mcommit 7e4eff38c36aced5a417c5d57af11d61ec8bc612[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat May 4 14:10:36 2019 -0300
+
+    Adicionado mais funcoes atendente
+
+[33mcommit 50bc0250609fe7748d71102ea2cb7b432b8c0e2b[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri May 3 21:13:25 2019 -0300
+
+    feito tela de vendas com implementação de botões
+
+[33mcommit 4dcb588584403e1a355014aa3e8402e27e994098[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri May 3 19:34:30 2019 -0300
+
+    adicionado setor na barra de menu
+
+[33mcommit 3990b66a327c1633b6cab171c3833f72eae85a33[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri May 3 15:46:23 2019 -0300
+
+    feito tela de finaceiro, adicionado icones
+
+[33mcommit 066fd964358c8ea72ca6b882d703930a4d933f11[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri May 3 13:46:35 2019 -0300
+
+    termino de telas estoque, feito relatorio de venda,feito relatorio estoque
+
+[33mcommit 3b5405e347bf361558a3c7d1b6fc2b7ad63be482[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri May 3 03:50:49 2019 -0300
+
+    refeito tela inical e tela de estoque
+
+[33mcommit 69216f0301f310816050ba080ce41d136118f07b[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu May 2 20:36:18 2019 -0300
+
+    add icons, e iniciado detela de estoque
+
+[33mcommit f4009afaba2d5710197bcdbc77b7d59fa3816143[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu May 2 16:21:57 2019 -0300
+
+    feito tela de vendedor com integracao de telas
+
+[33mcommit baf15e5f027e034d5c16d01a6330ee99230ecd26[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu May 2 02:24:58 2019 -0300
+
+    adicionado tela de fundo
+
+[33mcommit ac42c3a1ea8db1e3f1bb069d3c3b47303d10575d[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu May 2 01:23:59 2019 -0300
+
+    add feito menu inicial 02/05 adicionando imagens
+
+[33mcommit 0075ce99161fc4447b44a81f0b35069dc1ab76af[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Tue Apr 30 11:38:06 2019 -0300
+
+    ultimas atualizações 30/04
+
+[33mcommit e78e100c13f1ca360eba53b9980461f44a123670[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Mon Apr 29 18:32:56 2019 -0300
+
+    adicionado items não comitados
+
+[33mcommit fb1f87cec69c3a520387c3e3c1d6d6b886fbb778[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Mon Apr 29 18:31:06 2019 -0300
+
+    adicionado mais alguns nome, redefinido tela de cadastro fornecedor
+
+[33mcommit fff5593b7378d2adf49344ac7343079729210854[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Mon Apr 29 16:12:02 2019 -0300
+
+    adicionado mais mundaças, layout, nomes, e organizado conforme diagrama de classes
+
+[33mcommit 09b6b1700951bf531e1e8fc7d5f06ee94b0a8c1d[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 23:36:32 2019 -0300
+
+    verificação do projeto e itens não salvos
+
+[33mcommit 84351aa928b363fb7869ecda981ba3a13308d351[m
+Merge: 56b5e4a 59d7c82
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 23:31:51 2019 -0300
+
+    add mescla do kawam
+
+[33mcommit 56b5e4a6fc75e66bf934f03d0cb220173a5481b1[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 22:12:12 2019 -0300
+
+    testando push
+
+[33mcommit 04742423650210595b6bd67746591a76dfff6b11[m
+Author: Daniel Rangel <42664615+Daniel-Rangel@users.noreply.github.com>
+Date:   Sat Apr 27 22:07:30 2019 -0300
+
+    Create teste.txt
+
+[33mcommit 59d7c826d72384870b6805b6ab13d427cf66a758[m
+Author: Kauan <kalezdiaz@gmail.com>
+Date:   Sat Apr 27 13:11:52 2019 -0300
+
+    Foi feita a Tela do fonecedor
+
+[33mcommit 1a2b45aa987d17efdc4dc4dda05badd023b27067[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Sat Apr 27 12:43:18 2019 -0300
+
+    adicionado pasta porjeto interdiciplinar
+
+[33mcommit c8ca968b6f1bf9ad1ef98b7bd767d6dfa09c21e7[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 21:28:24 2019 -0300
+
+    os nao salvos
+
+[33mcommit f0b5ed2ef051abec02d9605a72a46b95d210cffb[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 21:11:48 2019 -0300
+
+    alterado tela de cadastro de protudo
+
+[33mcommit 98a84a72a4f36c219cdd50a8a2827d4d0a279c7b[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 01:51:30 2019 -0300
+
+    feito parte da tela de cadastro de produto obs tem que pesquisar mais telas
+
+[33mcommit 8dbb7be053042da0c4c3f520354c9cb307d0ce08[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Fri Apr 26 01:00:21 2019 -0300
+
+    adicionado mudanças no não salvas
+
+[33mcommit 92db94353b74492e2a421b5f72a93ab068325387[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu Apr 25 17:04:04 2019 -0300
+
+    adicionado alguns campos de texto em cadastro cliente, cadastro de itens
+
+[33mcommit 0037b17b7a3d65075fb5bd866371545d35935ab5[m
+Author: Daniel Rangel <danf.arangel@gmail.com>
+Date:   Thu Apr 25 13:39:12 2019 -0300
+
+    Primeiro commit criando repositorio para pasta projeto da faculdade

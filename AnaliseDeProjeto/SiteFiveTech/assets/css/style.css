@@ -14,3 +14,19 @@
 .recuo{
     text-indent: 4em;
 }
+
+.tabela2 table thead, tbody{
+    font-weight: bold;
+}
+
+.tabela2, .botoes:hover{
+    background-color: #28a745;
+    font-weight: bold;
+    
+}
+.tabela2, .botoes2:hover{
+    background-color: #dc3545;
+    font-weight: bold;
+    
+}
+
