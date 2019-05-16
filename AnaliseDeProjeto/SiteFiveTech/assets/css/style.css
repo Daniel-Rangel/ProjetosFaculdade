@@ -2,7 +2,11 @@
 *{
     margin: none;
 }
-
+.fundo{
+    background: url(assets/imagens/paraVenda);
+    height: 720px;
+    background-color: #28a745;
+}
 .esquerdo{
     background-color: aqua;
 }
