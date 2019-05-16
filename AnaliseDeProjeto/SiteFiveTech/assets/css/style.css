@@ -3,34 +3,24 @@
     margin: none;
 }
 .fundo{
-    background: url(assets/imagens/paraVenda);
-    height: 720px;
+    height: 620px;
     background-color: #28a745;
 }
-.esquerdo{
-    background-color: aqua;
+
+.btnCor{
+    width: 300px;
+    background-color: #cacecb;
+    color: #000;
+    font-size: 18px;
+    font-weight: 800;
 }
 
-.promocional .col{
-    height: 500px;
+.imgF{
+    font-weight: 800;
 }
 
-.recuo{
-    text-indent: 4em;
-}
+.hr2{
 
-.tabela2 table thead, tbody{
-    font-weight: bold;
-}
-
-.tabela2, .botoes:hover{
-    background-color: #28a745;
-    font-weight: bold;
-    
-}
-.tabela2, .botoes2:hover{
-    background-color: #dc3545;
-    font-weight: bold;
-    
+    border: rgb(224, 221, 221) solid 1px;
 }
 
