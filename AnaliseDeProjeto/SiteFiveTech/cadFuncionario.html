@@ -22,7 +22,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link btn btn-light" style="height: 100px" >
+                        <a href="cadFornecedor.html" class="nav-link btn btn-light" style="height: 100px" >
                             <figure class="figure">
                                 <img src="assets/imagens/MenuFerramenta/Fornecedor.png"/>
                                 <figcaption class="figcaption-caption text-center imgF">Fornecedor</figcaption>
@@ -107,7 +107,7 @@
             <div class="row">
 
                 <div class="col-12 text-center my-2">
-                    <h1 class="display-3">Adicione Fonecedor</h1>
+                    <h1 class="display-3">Adicinar Funcionário</h1>
                     
                 </div>
             </div>
@@ -117,42 +117,36 @@
                     <form>
                         <div class="form-row">
 
-                            <div class="form-group col-sm-6">
+                            <div class="form-group col-sm-4">
 
-                                <label for="inputNfantasia">Nome Fantasia:</label>
+                                <label for="inputNome">Nome:</label>
 
-                                <input type="text" class="form-control" id="inputNfantasia" placeholder="Nome Fantasia">
+                                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
                             </div>
 
                             <div class="form-group col-sm-6">
 
-                                <label for="inputRsocial">Razão Social:</label>
-                                <input type="text" class="form-control" id="inputRsocial" placeholder="Razão Social">
+                                <label for="inputSobreNome">Seu sobre Nome:</label>
+                                <input type="text" class="form-control" id="inputSobreNome" placeholder="Sobre Nome">
+                            </div>
+                            <div class="from-group col-sm-2">
+                                <label for="inputSex">Sexo:</label>
+                                <select class="form-control" id="inputSex">
+                                    <option selected>Escolha</option>
+                                    <option >Feminino</option>
+                                    <option >Masculino</option>
+                                </select>
                             </div>
                         </div>
                         
                         <div class="form-row ">
                             <div class="form-goup col-sm-6">
-                                <label for="inputEmail">E-mail:</label>
-                                <input type="text" class="form-control" id="inputEmail" placeholder="E-mail de Contato">
+                                <label for="inputRg">RG:</label>
+                                <input type="text" class="form-control" id="inputRg" placeholder="Digite o RG">
                             </div>
                             <div class="form-groupp col-sm-6">
-                                <label for="inputCnpj">CNPJ</label>
-                                <input type="text" class="form-control" id="inputCnpj" placeholder="Digite o CNPJ">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <label for="inputTel1">Telefone 1:</label>
-                                <input type="text" class="form-control" id="inputTel1" placeholder="Telefone">
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <label for="inputTel2">Telefone 2:</label>
-                                <input type="text" class="form-control" id="inputTel1" placeholder="Telefone">
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <label for="inputFax">FAX:</label>
-                                <input type="text" class="form-control" id="inputTel1" placeholder="Fax">
+                                <label for="inputCpf">CPF</label>
+                                <input type="text" class="form-control" id="inputCpf" placeholder="Digite o CPF">
                             </div>
                         </div>
 
@@ -219,8 +213,9 @@
                 </div>
 
             </div>
-        </div>
 
+        </div>
+        
 
 
         <script type="text/javascript" src="assets/Js/jquery-3.3.1.min.js"></script>

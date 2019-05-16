@@ -9,56 +9,97 @@
     </head>
     <body>
         <!--menu-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <!--botão de 3 traços-->
-                <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navBarMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--menu responsivo-->
-                <div class="collapse navbar-collapse" id="navBarMenu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item ">
-                                <a href="index.html " class="nav-link ">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="produtos.html" class="nav-link " >Produtos</a>
-                        </li>
-                        <li class="nav-item  dropdown ">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" >Cadastro</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="cadCliente.html">Cliente</a>
-                                <a class="dropdown-item" href="cadFornecedor.html">Fornecedor</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" >Sobre Nós</a>
-                        </li>
-                    </ul>
-                    <!--MEnu dropdown-->
-                    <ul class="navbar-nav ">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" href="#">Social</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">FaceBook</a>
-                                <a class="dropdown-item" href="#">Twitter</a>
-                                <a class="dropdown-item" href="#">YouTube</a>
-                            </div>
-                        </li>
-                    </ul>
-                    <form class="form-inline ml-auto mr-3">
-                        <input type="search" placeholder="Buscar..." class="form-control ml-1 mr-1">
-                        <button class="btn btn-dark" type="submit">OK</button>
-                    </form>
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-link">Entrar</a>
-                    </div>
-                    <div class="navbar-nav">
-                        <a href="carrinho.html" class="nav-link active">Carrinho<span class="badge badge-danger badge-pill">3</span></a>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-sm navbar-light mt-2">
+            <!--menu responsivo-->
+            <div class="collapse navbar-collapse" id="navBarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a href="cadCliente.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/Cliente.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Cliente</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadFornecedor.html" class="nav-link btn btn-light" style="height: 100px" >
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/Fornecedor.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Fornecedor</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="cadFuncionario.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/Funcionario.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Funcionário</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li style="color: #fff;">e</li>
+                    <li class="nav-item ">
+                        <a href="produtos.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/Produtos.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Produtos</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item ">
+                        <a href="cunsultar.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/codigoBrr.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Consultar</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li style="color: #fff;">e</li>
+                    <li class="nav-item ">
+                        <a href="carrinho.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/caixa2.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Caixa</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="atendimento.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/Atendimento.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Atendimento</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="estoque.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/Estoque.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Estoque</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="flCaixa.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/CaixaF.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Fluxo de Caixa</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li style="color: #fff;">e</li>
+                    <li class="nav-item ">
+                        <a href="sair.html" class="nav-link btn btn-light" style="height: 100px">
+                            <figure class="figure">
+                                <img src="assets/imagens/MenuFerramenta/Sair.png"/>
+                                <figcaption class="figcaption-caption text-center imgF">Sair</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul> 
             </div>
-        </nav>
+        </nav><hr class="hr2">
         <!--Msg de Carrinho-->
         <div class="row mt-3 mx-5">
             <div class="col-12 bg-light mb-3"><h1 class="text-center">Produtos adicionados</h1></div>
