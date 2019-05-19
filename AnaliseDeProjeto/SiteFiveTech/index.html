@@ -48,7 +48,7 @@
                 </li>
                 
                 <li class="nav-item ">
-                    <a href="cunsultar.html" class="nav-link btn btn-light" style="height: 100px">
+                    <a href="#" class="nav-link btn btn-light" style="height: 100px " data-toggle="modal" data-target="#Consultar">
                         <figure class="figure">
                             <img src="assets/imagens/MenuFerramenta/codigoBrr.png"/>
                             <figcaption class="figcaption-caption text-center imgF">Consultar</figcaption>
@@ -90,7 +90,7 @@
                 </li>
                 <li style="color: #fff;">e</li>
                 <li class="nav-item ">
-                    <a href="sair.html" class="nav-link btn btn-light" style="height: 100px">
+                    <a href="#" class="nav-link btn btn-light" style="height: 100px">
                         <figure class="figure">
                             <img src="assets/imagens/MenuFerramenta/Sair.png"/>
                             <figcaption class="figcaption-caption text-center imgF">Sair</figcaption>
@@ -104,15 +104,113 @@
     <div class="container-fluid fundo" style="background: url(WIDE1.jpg); background-repeat: no-repeat;" >
         <div class="row justify-content-center align-items-center" style="height: 620px;">
             <div class="col-2">
-                <button class="btn btn-secondary btnCor">Login</button>
+                <button class="btn btn-secondary btnCor" data-toggle="modal" data-target="#siteCompras">Login</button>
             </div>
         </div>
     </div>
 
-    <!--modal'is -->
+    <!--modal de login-->
+    <div class="modal fade" id="siteCompras" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--cabeça do modal-->
+                <div class="modal-header">
+                    <h5 class="modal-title">Login de Usuario</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+                        <div class="row ">
+                            <div class="col text-center">
+                                <img src="assets/imagens/MenuFerramenta/Funcionario.png">
+                            </div>
+                        </div>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm">
+                                    <label for="inputNome">Nome:</label>
+                                    <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm">
+                                    <label for="inputNome">senha:</label>
+                                    <input type="password" class="form-control" id="inputNome" placeholder="senha">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm">
+                                    <label for="inputNome">Cargo:</label>
+                                    <input type="text" class="form-control" id="inputNome" placeholder="profissão">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Logar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--modal de Comsulta-->
+        <div class="modal fade" id="Consultar" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <!--cabeça do modal-->
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title ">Consultar Protudo</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
     
+                        <div class="container-fluid">
+                            <div class="row ">
+                                <div class="col text-center">
+                                    <img src="assets/imagens/MenuFerramenta/codigoBrr.png">
+                                </div>
+                            </div>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-sm">
+                                        <label for="inputNome">Digite Codigo:</label>
+                                        <input type="text" class="form-control" id="inputNome" placeholder="Numero do Codigo">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-sm">
+                                        <label for="inputNome">Nome:</label>
+                                        <input type="text" class="form-control" id="inputNome" placeholder="Nome do Produto">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-sm">
+                                        <label for="inputNome">Valor:</label>
+                                        <input type="text" class="form-control" id="inputNome" placeholder="Valor do Produto">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+    
+                    </div>
+                    <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Consultar</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
+            <!--chamando os javascript-->
+            <script type="text/javascript" src="assets/Js/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript" src="assets/Js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
