@@ -11,7 +11,7 @@
         <!--menu-->
         <nav class="navbar navbar-expand-sm navbar-light mt-2">
             <!--menu responsivo-->
-            <div class="collapse navbar-collapse" id="navBarMenu">
+            <div class="collapse navbar-collapse " id="navBarMenu">
                 <ul class="navbar-nav">
                     <li class="nav-item ">
                         <a href="cadCliente.html" class="nav-link btn btn-light" style="height: 100px">
@@ -39,7 +39,7 @@
                     </li>
                     <li style="color: #fff;">e</li>
                     <li class="nav-item ">
-                        <a href="produtos.html" class="nav-link btn btn-light" style="height: 100px">
+                        <a href="#" class="nav-link btn btn-light" style="height: 100px">
                             <figure class="figure">
                                 <img src="assets/imagens/MenuFerramenta/Produtos.png"/>
                                 <figcaption class="figcaption-caption text-center imgF">Produtos</figcaption>
@@ -100,30 +100,84 @@
                 </ul> 
             </div>
         </nav><hr class="hr2">
-        <!--Msg de Carrinho-->
-        <div class="row mt-3 mx-5">
-            <div class="col-12 bg-light mb-3"><h1 class="text-center">Produtos adicionados</h1></div>
+    <div class="container">
+        <div class="row mx-0">
+            <div class="col-7 bg-light mr-2 px-0">
+                <nav class="navbar navbar-expand-sm navbar-light px-0 justify-content">
+                    <div class="collapse navbar-collapse justify-content">
+                        <ul class="navbar-nav">
+                            <li class="nav-item pl-0 ml-0 mr-4">
+                                <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;" data-toggle="modal" data-target="#localizar">
+                                <figure class="figure">
+                                    <img src="assets/imagens/MenuFerramenta/Produtos.png"/>
+                                    <figcaption class="figcaption-caption text-center imgF">Localizar</figcaption>
+                                </figure>
+                                </a>
+                            </li>
+                            <li class="nav-item pl-0 mr-4">
+                                <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;">
+                                <figure class="figure">
+                                    <img src="assets/imagens/caixa/Canselar.png"/>
+                                    <figcaption class="figcaption-caption text-center imgF">Excluir Item</figcaption>
+                                </figure>
+                                </a>
+                            </li>
+                            <li class="nav-item pl-0 mr-4">
+                                <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;" data-toggle="modal" data-target="#pedido">
+                                <figure class="figure">
+                                    <img src="assets/imagens/caixa/boss.png"/>
+                                    <figcaption class="figcaption-caption text-center imgF">Pedido</figcaption>
+                                </figure>
+                                </a>
+                            </li>
+                            <li class="nav-item pl-0 mr-4">
+                                <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;">
+                                <figure class="figure">
+                                    <img src="assets/imagens/caixa/Entrega.png"/>
+                                    <figcaption class="figcaption-caption text-center imgF">Entrega</figcaption>
+                                </figure>
+                                </a>
+                            </li>
+                            <li class="nav-item pl-0 mr-0 ml-0">
+                                <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 112px;" data-toggle="modal" data-target="#funcoes">
+                                <figure class="figure">
+                                    <img src="assets/imagens/MenuFerramenta/caixa2.png"/>
+                                    <figcaption class="figcaption-caption text-center imgF">Fuções</figcaption>
+                                </figure>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav><hr>
             
-            <div class="col-8 bg-light px-0">
+            <form class="form-inline my-2">
+                <h4 class="col-9 ">Nome do Cliente:<p class="font-weight-light mt-2"> Fulano de Tal</p></h4>
+                <div class="form-group col-3 px-0">
+                    <label for="quantidade"><h4> Qtde:</h4></label>
+                    <input type="text" class="form-control col-6 ml-3 " id="txtquantidade">
+                </div>
+            </form>
+                <!--fim da sub barra-->
+            <div class="col bg-light px-0">
                 <table class="table  table-hover">
                     <thead class="thead-dark">
                         <tr>
                             <th>#</th>
                             <th>Item</th>
-                            <th>Quantidade</th>
-                            <th>Valor Unitario</th>
+                            <th>Qtde</th>
+                            <th>Valor Uni</th>
                             <th>Valor Total</th>
-                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th>1</th>
-                            <th>kit de Vela texto de teste para ver como fica</th>
+                            <th>kit de Vela texto de teste</th>
                             <th>2</th>
                             <th>R$ 30,00</th>
                             <th>R$ 60,00</th>
-                            <th><a href="#" class="btn btn-light botoes2">x</a></th>
+                            
                         </tr>
                         <tr>
                             <th>2</th>
@@ -131,7 +185,7 @@
                             <th>2</th>
                             <th>R$ 40,00</th>
                             <th>R$ 80,00</th>
-                            <th><a href="#" class="btn btn-light botoes2">x</a></th>
+                            
                         </tr>
                         <tr>
                             <th>3</th>
@@ -139,60 +193,221 @@
                             <th>2</th>
                             <th>R$ 20,00</th>
                             <th>R$ 40,00</th>
-                            <th><a href="#" class="btn btn-light botoes2">x</a></th>
+                            
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="col-4 tabela2">
-                <div class="row bg-light">
-                    <div class="col-12 pr-0 mb-1">
-                        <table class="table table-hover table-borderless pb-1">
-                            <thead class="bg-dark text-light text-center">
+
+            </div>  
+            <!--Tabela de valores-->
+            <div class="col-4 bg-dark px-0">
+                <div class="row bg-light mx-0">
+                    <div class="col-12 px-0 mb-1">
+                        <table class="table table-borderless pb-1">
+                            <thead class="bg-dark text-light">
                                 <tr>
-                                    <td colspan="2">Valores Totais</td>
+                                    <td>Valores Totais</td>
                                 </tr>
                             </thead>
                             <tbody class="">
                                     <tr>
-                                        <td>SubTotal</td>
-                                        <td>R$ 180,00</td>
+                                        <td>Numero do Pedido:</td>
                                     </tr>
                                     <tr>
-                                        <td>Entrega</td>
-                                        <td></td>
+                                        <td>123789845000</td>
                                     </tr>
                                     <tr>
-                                        <td>Total</td>
-                                        <td>R$ 180,00</td>
+                                        <td>Código do Item:</td>
+                                    </tr>
+                                    <tr>
+                                        <td>78900015879868</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Valor Unitário:</td>
+                                    </tr>
+                                    <tr>
+                                        <td>R$ 120,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Valor da Compra:</td>
+                                    </tr>
+                                    <tr>
+                                        <td>R$ 3.500,50</td>
                                     </tr>
                             </tbody>
                         </table>    
                     </div>
-                    <div class="col-12 cxbtn justify-content-end align-items-end pr-0" style="height: 100px;">
-
+                    <div class="col-12 cxbtn px-0">
                             <button class="btn btn-secondary btn-block botoes">Finalizar Compra</button>
-                            <button class="btn btn-secondary btn-block botoes2">Cancelar Carrinho</button>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="row" style="height: 210px;">
+    </div><br><br>
+    <!--botão volta menu-->
+    <div class="mt-5">
+        <a href="index.html" class="btn btn-light col-12">Voltar</a>
+    </div>
 
+<!--inicio do modal de Funções-->
+    <div class="modal fade" id="funcoes" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--cabeça do modal-->
+                <div class="modal-header text-center">
+                    <h5 class="modal-title ">Fuções do Caixa</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        <button class="btn btn-secondary btn-block"><h5>Sangria</h5></button>
+                        <button class="btn btn-secondary btn-block"><h5>Ultimo Cupom</h5></button>
+                        <button class="btn btn-secondary btn-block"><h5>Realtório</h5></button>
+                        <button class="btn btn-secondary btn-block"><h5>Fechar caixa</h5></button>
+                        <button class="btn btn-secondary btn-block"><h5>Sair</h5></button>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        
-        <!--Footer-->
-        <div class="row mt-4 bg-dark justify-content-center text-light">
-            <blockquote class="blockquote text-center">
-                <p class="mb-0">
-                    O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalmente envolvido em seu trabalho.
-                </p>
-                <footer class="bockquote-footer">Biz Stone <cite title="Titulo">Fundador do Twitter</cite></footer>
-            </blockquote>
+    </div>
+
+    <!--inicio do modal de Pedido-->
+    <div class="modal fade" id="pedido" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!--cabeça do modal-->
+                <div class="modal-header text-center">
+                    <h5 class="modal-title ">Localizar Pedido</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="localizar"><h6 class="mr-2"> Nome do Cliente: </h6></label>
+                            <input type="text" class="form-control" id="locaizar" placeholder="Nome do Cliente"> 
+                        </div>
+                        <button type="submit" class=" btn btn-dark">Localizar</button>
+                    </form>
+                    <table class="table table-borderless table-hover mt-2 pb-1">
+                            <thead class="bg-dark text-light">
+                                <tr>
+                                    <td>Nome do cliente:</td>
+                                    <td>Numero do pedido:</td>
+                                    <td>Valor do Pedido</td>
+                                    <td>Qtde item</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                        <td>Lucas </td>
+                                        <td>1239875</td>
+                                        <td>R$ 1000,00</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Leo </td>
+                                        <td>789452</td>
+                                        <td>R$ 1300,20</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Enzzo </td>
+                                        <td>654895</td>
+                                        <td>R$ 800,90</td>
+                                        <td>4</td>
+                                    </tr>
+                            </tbody>
+                        </table>   
+                </div>
+            </div>
         </div>
-        
+    </div>
+    
+    <!-- Modal adicionar novo Item-->
+    <div class="modal fade" id="localizar">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--cabeça do modal-->
+                <div class="modal-header text-center">
+                    <h5 class="modal-title ">Adicionar Produto</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="localizar"><h6 class="mr-5"> Buscar Protudo: </h6></label>
+                            <input type="text" class="form-control" id="locaizar" placeholder="Protudo"> 
+                        </div>
+                        <button type="submit" class=" btn btn-dark">Localizar</button>
+                    </form>
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <img src="assets/imagens/paraVenda/farol.jpg" style="width: 200px">
+                        </div>
+                        <div class="col-6">
+                            <form>
+                                <div class="form-group">
+                                    <label for="QtdeIt">Quantidade no estoque:</label>
+                                    <input type="text" class="form-control" readonly="readonly" placeholder="10">
+                                </div>
+                                <div class="form-group">
+                                    <label for="QtdeIt">Nº de Identificação:</label>
+                                    <input type="text" class="form-control" readonly="readonly" placeholder="78945877892199">
+                                </div>
+                                <div class="form-group">
+                                    <label for="QtdeIt">OEN:</label>
+                                    <input type="text" class="form-control" readonly="readonly" placeholder="55214974">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <h5>Itens Relacionados: </h5>
+                            <table class="table table-borderless table-hover">
+                                <thead class="bg-dark text-light">
+                                    <tr>
+                                        <td>Protudo</td>
+                                        <td>Valor:</td>
+                                        <td>Qtde item</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td>Lanterna Frontal</td>
+                                            <td>R$ 100,00</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lanterna Frontal</td>
+                                            <td>R$ 100,00</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lanterna Frontal</td>
+                                            <td>R$ 100,00</td>
+                                            <td>3</td>
+                                        </tr>
+                                </tbody>
+                            </table>   
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary ">Sair</button>
+                        <button class="btn btn-secondary ">Adicionar</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- fim do html -->
+                
         <script type="text/javascript" src="assets/Js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="assets/Js/bootstrap.bundle.min.js"></script>
     </body>
