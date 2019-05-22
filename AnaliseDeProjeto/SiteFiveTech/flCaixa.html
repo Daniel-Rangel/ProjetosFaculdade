@@ -100,13 +100,152 @@
             
         </div>
     </nav><hr class="hr2">
-    <div class="container-fluid fundo" style="background: url(WIDE1.jpg); background-repeat: no-repeat;" >
-        <div class="row justify-content-center align-items-center" style="height: 620px;">
-            <div class="col-2">
-                <button class="btn btn-secondary btnCor" data-toggle="modal" data-target="#siteCompras">Login</button>
-            </div>
-        </div>
-    </div>
+
+        <!-- inicio da tela de estoque-->
+        <div class="container"> 
+                <h1 class="text-center my-3">Financeiro McLaren</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Proximas Contas a Pagar</h3>
+                        <table class="table  table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Codigo</th>
+                                    <th>Empresa/Fornecedor</th>
+                                    <th>Data de Emissão</th>
+                                    <th>Data de Vencimento</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>035</th>
+                                    <th>Aluguel</th>
+                                    <th>20/04/19</th>
+                                    <th>02/05/19</th>                                   
+                                    
+                                </tr>
+                                <tr>
+                                    <th>020</th>
+                                    <th>Luz</th>
+                                    <th>20/04/19</th>
+                                    <th>04/05/19</th>                                    
+                                </tr>
+                                <tr>
+                                    <th>032</th>
+                                    <th>Fornecedor 1</th>
+                                    <th>10/05/19</th>
+                                    <th>20/05/19</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><hr>
+        
+                <!-- lista de Itens estocados-->
+                <h1 class="text-center my-3">Últimas Entradas de Contas</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Proximas Contas a Pagar</h3>
+                        <table class="table  table-hover">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Codigo</th>
+                                    <th>Empresa/Fornecedor</th>
+                                    <th>Data de Emissão</th>
+                                    <th>Data de Vencimento</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>035</th>
+                                    <th>Aluguel</th>
+                                    <th>20/05/19</th>
+                                    <th></th>                                   
+                                    
+                                </tr>
+                                <tr>
+                                    <th>020</th>
+                                    <th>Luz</th>
+                                    <th>20/05/19</th>
+                                    <th></th>                                    
+                                </tr>
+                                <tr>
+                                    <th>032</th>
+                                    <th>Fornecedor 1</th>
+                                    <th>15/05/19</th>
+                                    <th></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div><hr>
+                    
+                <!--inicio dos potões do estoque-->
+                <div class="row mt-3">
+                    <div class="col-9">
+                        <nav class="navbar navbar-expand-sm navbar-light px-0 justify-content">
+                            <div class="collapse navbar-collapse justify-content">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item pl-0 ml-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;" data-toggle="modal" data-target="#Adicionar">
+                                        <figure class="figure">
+                                            <img src="assets/imagens/Contabilidade/ContIncluir.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Incluir</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pl-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;" data-toggle="modal" data-target="#Aterar">
+                                        <figure class="figure">
+                                            <img src="assets/imagens/Contabilidade/ContAlterar.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Alterar</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pl-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;">
+                                        <figure class="figure">
+                                            <img src="assets/imagens/Contabilidade/ContExcluir.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Excluir</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pl-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 110px;" data-toggle="modal" data-target="#Relatorio">
+                                        <figure class="figure">
+                                            <img src="assets/imagens/Contabilidade/ContRelatorio.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Relatório</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pl-0 mr-0 ml-0">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 100px; width: 112px;">
+                                        <figure class="figure">
+                                            <img src="assets/imagens/Contabilidade/ContFlCx.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Nv Pedido</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+        
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-3 ">
+                        <button class="btn btn-light botao" style="height: 108px; width: 112px;">
+                            <figure class="figure">
+                                <img src="assets/imagens/Contabilidade/ContSair.png" >
+                                <figcaption class="figcaption-caption text-center imgF">Sair</figcaption>
+                            </figure>
+                        </button>
+                    </div>
+                </div><!-- fim do row -->
+        
+            </div><!--fim do container-->
+    
+
 
     
             <!--chamando os javascript-->
