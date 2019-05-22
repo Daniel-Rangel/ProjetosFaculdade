@@ -101,17 +101,656 @@
             
         </div>
     </nav><hr class="hr2">
-    <div class="container-fluid fundo" style="background: url(WIDE1.jpg); background-repeat: no-repeat;" >
-        <div class="row justify-content-center align-items-center" style="height: 620px;">
-            <div class="col-2">
-                <button class="btn btn-secondary btnCor" data-toggle="modal" data-target="#siteCompras">Login</button>
+        <div class="container mt-2">
+            <div class="row px-0">
+                <div class="col-12 text-center">
+                        <h1>Atendimento McLaren</h1>
+                </div>
+                <div class="col-12 mt-3">
+                    <h3>Pedidos do dia</h3>
+                    <table class="table table-borderless table-hover">
+                        <thead class="bg-dark text-light">
+                            <tr>
+                                <td>Nº Pedido</td>
+                                <td>Nome Cliente</td>
+                                <td>Qtde de itens</td>
+                                <td>Data</td>
+                                <td>Valor</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>45678958</td>
+                                <td>João Pereira</td>
+                                <td>15</td>
+                                <td>12/04/12</td>
+                                <td>R$ 1.500,00</td>
+                                <td>A Pagar</td>
+                            </tr>
+                            <tr>
+                                <td>45612358</td>
+                                <td>Lucas Santos</td>
+                                <td>5</td>
+                                <td>12/04/12</td>
+                                <td>R$ 150,00</td>
+                                <td>Pago</td>
+                            </tr>
+                            <tr>
+                                <td>45612349</td>
+                                <td>Maria Luisa</td>
+                                <td>6</td>
+                                <td>12/04/12</td>
+                                <td>R$ 443,45</td>
+                                <td>Entregue</td>
+                            </tr>
+                            <tr>
+                                <td>45678212</td>
+                                <td>João Silva</td>
+                                <td>2</td>
+                                <td>12/04/12</td>
+                                <td>R$ 203,20</td>
+                                <td>Endregue</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- inicio de pesquisa de compra do cliente -->
+                <div class="col">
+                    <h3>Ultimas Compras do Cliente</h3>
+                </div>
+                <form class="col form-inline px-0">
+                    <div class="form-group  ml-4">
+                        <label for="quantidade"><h4> Localizar Cliente:</h4></label>
+                        <!-- ver na internet-->
+                        <input type="text" class="form-control ml-3 " id="txtquantidade">
+                        <input type="submit" class="btn btn-dark" value="Localizar">
+                    </div>
+                </form>
+                <div class="col-12 mt-2">
+                    <table class="table table-borderless table-hover">
+                        <thead class="bg-dark text-light">
+                            <tr>
+                                <td>Nº Pedido</td>
+                                <td>Nome Cliente</td>
+                                <td>Qtde itens</td>
+                                <td>Data Endrega</td>
+                                <td>Valor</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>45678958</td>
+                                <td>João Pereira</td>
+                                <td>15</td>
+                                <td>12/04/12</td>
+                                <td>R$ 1.500,00</td>
+                                <td>A Pagar</td>
+                            </tr>
+                            <tr>
+                                <td>45612312</td>
+                                <td>João Pereira</td>
+                                <td>5</td>
+                                <td>00/00/00</td>
+                                <td>R$ 150,00</td>
+                                <td>Pendenti</td>
+                            </tr>
+                            <tr>
+                                <td>45612323</td>
+                                <td>João Pereira</td>
+                                <td>6</td>
+                                <td>10/02/12</td>
+                                <td>R$ 443,45</td>
+                                <td>Entregue</td>
+                            </tr>
+                            <tr>
+                                <td>45678278</td>
+                                <td>João Pereira</td>
+                                <td>2</td>
+                                <td>15/12/11</td>
+                                <td>R$ 203,20</td>
+                                <td>Endregue</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--Botões de atendimento-->
+            <div class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <nav class="navbar navbar-expand-sm navbar-light px-0 justify-content">
+                            <div class="collapse navbar-collapse justify-content">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item pl-0 ml-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 135px; width: 180px;" data-toggle="modal" data-target="#fazpedido">
+                                        <figure class="figure">
+                                            <img src="assets/imagens/atendimento/VdPedido.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Novo Pedido</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pl-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 135px; width: 180px;" data-toggle="modal" data-target="#Consultar">
+                                        <figure class="figure">
+                                            <img src="assets/imagens/atendimento/VdConsultar.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Consultar Pedido</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pl-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 135px; width: 180px;" data-toggle="modal" data-target="#ConsProduto">
+                                        <figure class="figure">
+                                                <img src="assets/imagens/atendimento/Vditem.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Consultar Item</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item pl-0 mr-4">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 135px; width: 180px;">
+                                        <figure class="figure">
+                                                <img src="assets/imagens/atendimento/VdTroca.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Trocar</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item pl-0 mr-0 ml-0">
+                                        <a href="#" class="nav-link btn btn-light px-0" style="height: 135px; width: 180px;" data-toggle="modal" data-target="#CalRota">
+                                        <figure class="figure">
+                                                <img src="assets/imagens/atendimento/VdEntrega.png"/>
+                                            <figcaption class="figcaption-caption text-center imgF">Entrega</figcaption>
+                                        </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav><p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <a href="index.html" class="btn btn-ligth btn-block">voltar</a>
             </div>
         </div>
-    </div>
+
+<!-- sequenci a de modais para visualização de telas-->
 
 
-            <!--chamando os javascript-->
-            <script type="text/javascript" src="assets/Js/jquery-3.3.1.min.js"></script>
-            <script type="text/javascript" src="assets/Js/bootstrap.bundle.min.js"></script>
+        <!--Inicio do modal Consulta-->
+        <div class="modal fade" id="ConsProduto">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--cabeça do modal-->
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title ">Consulta de Protudo</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="localizar"><h6 class="mr-5"> Buscar Protudo: </h6></label>
+                                <input type="text" class="form-control" id="locaizar" placeholder="Protudo"> 
+                            </div>
+                            <button type="submit" class=" btn btn-dark">Localizar</button>
+                        </form>
+                        <div class="row">
+                            <div class="col-6 mt-3">
+                                <img src="assets/imagens/paraVenda/farol.jpg" style="width: 200px">
+                            </div>
+                            <div class="col-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="QtdeIt">Quantidade no estoque:</label>
+                                        <input type="text" class="form-control" readonly="readonly" placeholder="10">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="QtdeIt">Nº de Identificação:</label>
+                                        <input type="text" class="form-control" readonly="readonly" placeholder="78945877892199">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="QtdeIt">OEN:</label>
+                                        <input type="text" class="form-control" readonly="readonly" placeholder="55214974">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <h5>Itens Relacionados: </h5>
+                                <table class="table table-borderless table-hover">
+                                    <thead class="bg-dark text-light">
+                                        <tr>
+                                            <td>Protudo</td>
+                                            <td>Valor:</td>
+                                            <td>Qtde item</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>R$ 100,00</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>R$ 100,00</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>R$ 100,00</td>
+                                                <td>3</td>
+                                            </tr>
+                                    </tbody>
+                                </table>   
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary ">Sair</button>
+                            <button class="btn btn-secondary ">Adicionar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- modal fazer pedido -->
+            <div class="modal fade" id="fazpedido">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title ">Novo Peiddo</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label for="nomeCli">Cliente:</label>
+                                    <input type="text" class="form-control" id="inputEnd" placeholder="Nome do cliente" readonly>
+                                    <input type="submit" class=" btn btn-dark mt-2" value="Localizar">
+                                </div>
+                                <div class="form-group col-3">
+                                    <label for="txtCPF">CPF:</label>
+                                    <input type="text" class="form-control" id="inputEnd" placeholder="123.456.789.00" readonly>
+                                </div>
+                                
+                                <div class="form-group col-3 ">
+                                    <label for="NRegistro">Nº Registro:</label>
+                                    <input type="text" class="form-control" id="inputEnd"  placeholder="12345678" readonly>
+                                    
+                                </div>
+                            </div>
+                            <!-- modal descrição do pedido -->
+                            <div class="row">
+                                <div class="col-4">
+                                    <img src="assets/imagens/paraVenda/farol.jpg" style="width: 250px">
+                                </div>
+                                <div class="col-4">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="QtdeIt">Numero do Pedido:</label>
+                                            <input type="text" class="form-control" readonly="readonly" placeholder="456789123">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="QtdeIt">Data de Venda:</label>
+                                            <input type="text" class="form-control" readonly="readonly" placeholder="10/10/12">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="QtdeIt">Quandidade de itens:</label>
+                                            <input type="text" class="form-control" readonly="readonly" placeholder="3">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-4">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="QtdeIt">Nome do atendente:</label>
+                                            <input type="text" class="form-control" readonly="readonly" placeholder="Pedro Morais">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="QtdeIt">Nome do Caixa:</label>
+                                            <input type="text" class="form-control" readonly="readonly" placeholder="">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="QtdeIt">Total da Compra:</label>
+                                            <input type="text" class="form-control" readonly="readonly" placeholder="R$ 650,00">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!--texto de descrição-->
+                            <div class="row mt-2">
+                                <div class="col">
+                                    <h6>Tabela de itens Escolhidos:</h6>
+                                </div>
+                                <div class="col">
+                                    <h6>Status do pedidos:</h6>
+                                </div>
+                                <div class="col">
+                                    <h6 class="text-success">Novo Pedido</h6>
+                                </div>
+                            </div>
+                            <!--Potões de acessos-->
+                            <div class="row mt-2">
+                                <div class="col-3">
+                                    <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#localizar2">Novo Item</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark btn-block">Excluir Item</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark btn-block">Gerar Orçamento</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-dark btn-block">Enviar Pedido</button>
+                                </div>
+                            </div>
+                            <!--tablea com os itens-->
+                            <div class="row mt-3">
+                                <table class="table table-borderless table-hover">
+                                    <thead class="bg-dark text-light">
+                                        <tr>
+                                            <td>Nome:</td>
+                                            <td>Cód Barra:</td>
+                                            <td>Valor Unitário</td>
+                                            <td>Qtde item</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>789256478025</td>
+                                                <td>R$ 100,00</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>789256478025</td>
+                                                <td>R$ 200,00</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>789256478025</td>
+                                                <td>R$ 350,00</td>
+                                                <td>1</td>
+                                            </tr>
+                                    </tbody>
+                                </table>  
+                            </div>
+                        </div><!--fim do modal body-->
+
+                        <div class="modal-footer">
+                            <button class="btn btn-dark" data-dismiss="modal">Canselar Pedido</button>
+                        </div>
+                        
+                </div>
+            </div>
+        </div><!--fim do modal-->
+
+        <!-- inivio do sub modal-->
+        <div class="modal fade" id="localizar2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!--cabeça do modal-->
+                    <div class="modal-header text-center">
+                        <h5 class="modal-title ">Adicionar Produto</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="localizar"><h6 class="mr-5"> Buscar Protudo: </h6></label>
+                                <input type="text" class="form-control" id="locaizar" placeholder="Protudo"> 
+                            </div>
+                            <button type="submit" class=" btn btn-dark">Localizar</button>
+                        </form>
+                        <div class="row">
+                            <div class="col-6 mt-3">
+                                <img src="assets/imagens/paraVenda/farol.jpg" style="width: 200px">
+                            </div>
+                            <div class="col-6">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="QtdeIt">Quantidade no estoque:</label>
+                                        <input type="text" class="form-control" readonly="readonly" placeholder="10">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="QtdeIt">Nº de Identificação:</label>
+                                        <input type="text" class="form-control" readonly="readonly" placeholder="78945877892199">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="QtdeIt">OEN:</label>
+                                        <input type="text" class="form-control" readonly="readonly" placeholder="55214974">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <h5>Itens Relacionados: </h5>
+                                <table class="table table-borderless table-hover">
+                                    <thead class="bg-dark text-light">
+                                        <tr>
+                                            <td>Protudo</td>
+                                            <td>Valor:</td>
+                                            <td>Qtde item</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>R$ 100,00</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>R$ 100,00</td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lanterna Frontal</td>
+                                                <td>R$ 100,00</td>
+                                                <td>3</td>
+                                            </tr>
+                                    </tbody>
+                                </table>   
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary " data-dismiss="modal">Sair</button>
+                            <button class="btn btn-secondary " data-dismiss="modal">Adicionar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <!--FIM do Sub modal-->
+
+        <!--Inicio do modal de Consulta detalhada-->
+                <!-- modal fazer pedido -->
+                <div class="modal fade" id="Consultar">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title ">Novo Peiddo</h5>
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-row">
+                                    <div class="form-group col">
+                                        <label for="nomeCli">Cliente:</label>
+                                        <input type="text" class="form-control" id="inputEnd" placeholder="Nome do cliente" >
+                                        <input type="submit" class=" btn btn-dark mt-2" value="Localizar">
+                                    </div>
+                                    <div class="form-group col-3">
+                                        <label for="txtCPF">CPF:</label>
+                                        <input type="text" class="form-control" id="inputEnd" placeholder="123.456.789.00" >
+                                    </div>
+                                    
+                                    <div class="form-group col-3 ">
+                                        <label for="NRegistro">Nº Registro:</label>
+                                        <input type="text" class="form-control" id="inputEnd"  placeholder="12345678" >
+                                        
+                                    </div>
+                                </div>
+                                <!-- modal descrição do pedido -->
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="assets/imagens/paraVenda/farol.jpg" style="width: 250px">
+                                    </div>
+                                    <div class="col-4">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="QtdeIt">Numero do Pedido:</label>
+                                                <input type="text" class="form-control" readonly="readonly" placeholder="456789123">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="QtdeIt">Data de Venda:</label>
+                                                <input type="text" class="form-control" readonly="readonly" placeholder="10/10/12">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="QtdeIt">Quandidade de itens:</label>
+                                                <input type="text" class="form-control" readonly="readonly" placeholder="3">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-4">
+                                        <form>
+                                            <div class="form-group">
+                                                <label for="QtdeIt">Nome do atendente:</label>
+                                                <input type="text" class="form-control" readonly="readonly" placeholder="Pedro Morais">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="QtdeIt">Nome do Caixa:</label>
+                                                <input type="text" class="form-control" readonly="readonly" placeholder="">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="QtdeIt">Total da Compra:</label>
+                                                <input type="text" class="form-control" readonly="readonly" placeholder="R$ 650,00">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!--texto de descrição-->
+                                <div class="row mt-2">
+                                    <div class="col">
+                                        <h6>Tabela de itens Escolhidos:</h6>
+                                    </div>
+                                    <div class="col">
+                                        <h6>Status do pedidos:</h6>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="text-primary">Pedido Pago</h6>
+                                    </div>
+                                </div>
+                                <!--Potões de acessos-->
+                                <div class="row mt-2">
+                                    <div class="col-3">
+                                        <button class="btn btn-dark btn-block" disabled>Novo Item</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-dark btn-block" disabled>Excluir Item</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-dark btn-block" disabled>Gerar Orçamento</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button class="btn btn-dark btn-block" disabled>Enviar Pedido</button>
+                                    </div>
+                                </div>
+                                <!--tablea com os itens-->
+                                <div class="row mt-3">
+                                    <table class="table table-borderless table-hover">
+                                        <thead class="bg-dark text-light">
+                                            <tr>
+                                                <td>Nome:</td>
+                                                <td>Cód Barra:</td>
+                                                <td>Valor Unitário</td>
+                                                <td>Qtde item</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                    <td>Lanterna Frontal</td>
+                                                    <td>789256478025</td>
+                                                    <td>R$ 100,00</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lanterna Frontal</td>
+                                                    <td>789256478025</td>
+                                                    <td>R$ 200,00</td>
+                                                    <td>1</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lanterna Frontal</td>
+                                                    <td>789256478025</td>
+                                                    <td>R$ 350,00</td>
+                                                    <td>1</td>
+                                                </tr>
+                                        </tbody>
+                                    </table>  
+                                </div>
+                            </div><!--fim do modal body-->
+    
+                            <div class="modal-footer">
+                                <button class="btn btn-dark" data-dismiss="modal">Sair da Consulta</button>
+                            </div>
+                            
+                    </div>
+                </div>
+            </div><!--fim do modal-->
+
+
+            <!--Inicio do modal Calcular Rota-->
+            <div class="modal fade" id="CalRota">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!--cabeça do modal-->
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title ">Consulta de Protudo</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="EndAtual">Endereço Atual</label>
+                                    <input type="text" class="form-control" placeholder="Rua: Itu">
+                                </div>
+                                <div class="form-group">
+                                    <label for="NovoEnd">Novo endereço</label>
+                                    <input type="text" class="form-control" placeholder="Endereço para nova entrega">
+                                </div>
+                                <button class="btn btn-dark">Calcular Rota</button>
+                            </form>
+                            <div class="row m-5 text-center">
+                                <div class="col">
+                                    <h3>Valor a ser Cobrado:</h3>
+                                    <h4 class="text-danger">R$ 000,00</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary " data-dismiss="modal">Sair</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--chamando os javascript-->
+        <script type="text/javascript" src="assets/Js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/Js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
